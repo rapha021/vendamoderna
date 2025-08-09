@@ -18,8 +18,8 @@ export function CTAButton({
   variant = "primary" 
 }: CTAButtonProps) {
   const baseClasses = variant === "primary" 
-    ? "cta-gradient text-white font-bold py-6 px-12 rounded-xl text-xl shadow-lg hover:shadow-xl"
-    : "bg-accent-green text-white font-bold py-4 px-8 rounded-lg text-lg shadow-md hover:shadow-lg";
+    ? "cta-gradient text-white font-bold py-4 sm:py-6 px-6 sm:px-12 rounded-xl text-base sm:text-lg md:text-xl shadow-lg hover:shadow-xl"
+    : "bg-accent-green text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg shadow-md hover:shadow-lg";
 
   return (
     <motion.div
@@ -30,9 +30,9 @@ export function CTAButton({
       <Button
         onClick={onClick}
         disabled={disabled}
-        className={`${baseClasses} ${className} transition-all duration-300 w-full md:w-auto`}
+        className={`${baseClasses} ${className} transition-all duration-300 w-full`}
       >
-        <Rocket className="mr-3 h-5 w-5" />
+        <Rocket className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5" />
         {children}
       </Button>
     </motion.div>

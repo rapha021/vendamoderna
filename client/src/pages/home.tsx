@@ -73,27 +73,27 @@ export default function Home() {
       <BenefitsSection />
       
       {/* Final CTA Section */}
-      <section className="py-20 px-4 bg-dark-secondary/50">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="py-16 sm:py-20 px-4 bg-dark-secondary/50">
+        <div className="max-w-4xl mx-auto text-center mobile-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-dark-tertiary"
+            className="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-12 border border-dark-tertiary"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              <span className="text-2xl">🤑</span> É MAIS BARATO DO QUE UM LANCHE... E MUITO MAIS GOSTOSO!
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 px-2">
+              <span className="text-lg sm:text-2xl">🤑</span> É MAIS BARATO DO QUE UM LANCHE... E MUITO MAIS GOSTOSO!
             </h2>
             
-            <div className="mb-8">
-              <h3 className="text-4xl md:text-5xl font-bold mb-4">
+            <div className="mb-6 sm:mb-8">
+              <h3 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
                 Tudo isso e Muito Mais
                 <br />
                 Por Apenas <span className="text-accent-green">R$14,99</span> 
-                <span className="text-2xl"> 🤑</span>
+                <span className="text-xl sm:text-2xl"> 🤑</span>
               </h3>
-              <p className="text-text-secondary text-lg mb-8">
+              <p className="text-text-secondary text-base sm:text-lg mb-6 sm:mb-8">
                 (pagamento único!) <span className="text-accent-green">🔥</span>
               </p>
             </div>
@@ -115,31 +115,31 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-dark-primary/50 rounded-xl p-6 mb-8"
+              className="bg-dark-primary/50 rounded-xl p-4 sm:p-6 mb-6 sm:mb-8"
             >
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Check className="text-accent-green h-5 w-5" />
-                  <span className="text-text-primary">Acesso imediato e privado</span>
+              <div className="space-y-3 sm:space-y-4">
+                <div className="flex items-center space-x-2 sm:space-x-3">
+                  <Check className="text-accent-green h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-text-primary text-sm sm:text-base">Acesso imediato e privado</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="text-accent-green h-5 w-5" />
-                  <span className="text-text-primary">Sem mensalidade</span>
+                <div className="flex items-center space-x-2 sm:space-x-3">
+                  <Check className="text-accent-green h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-text-primary text-sm sm:text-base">Sem mensalidade</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="text-accent-green h-5 w-5" />
-                  <span className="text-text-primary">Totalmente seguro e anônimo</span>
+                <div className="flex items-center space-x-2 sm:space-x-3">
+                  <Check className="text-accent-green h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-text-primary text-sm sm:text-base">Totalmente seguro e anônimo</span>
                 </div>
               </div>
             </motion.div>
             
-            <div className="mb-8">
-              <p className="text-accent-green font-bold text-xl mb-4">
-                <TriangleAlert className="mr-2 inline h-5 w-5" />
+            <div className="mb-6 sm:mb-8 px-2">
+              <p className="text-accent-green font-bold text-lg sm:text-xl mb-3 sm:mb-4">
+                <TriangleAlert className="mr-2 inline h-4 w-4 sm:h-5 sm:w-5" />
                 NÃO PERCA TEMPO! AS VAGAS SÃO LIMITADAS!
               </p>
-              <p className="text-text-secondary">
-                <Info className="mr-2 inline h-4 w-4" />
+              <p className="text-text-secondary text-sm sm:text-base">
+                <Info className="mr-2 inline h-3 w-3 sm:h-4 sm:w-4" />
                 Clique no botão abaixo, garanta seu acesso agora e desbloqueie o conteúdo mais proibido da internet.
               </p>
             </div>
@@ -156,40 +156,40 @@ export default function Home() {
 
       {/* Purchase Modal */}
       <Dialog open={showPurchaseModal} onOpenChange={setShowPurchaseModal}>
-        <DialogContent className="bg-dark-secondary border-dark-tertiary">
+        <DialogContent className="bg-dark-secondary border-dark-tertiary max-w-md mx-4 sm:mx-auto">
           <DialogHeader>
-            <DialogTitle className="text-accent-green text-xl">
+            <DialogTitle className="text-accent-green text-lg sm:text-xl">
               🚀 Finalize sua compra
             </DialogTitle>
           </DialogHeader>
           <form onSubmit={handlePurchaseSubmit} className="space-y-4">
             <div>
-              <Label htmlFor="name" className="text-text-primary">Nome completo</Label>
+              <Label htmlFor="name" className="text-text-primary text-sm sm:text-base">Nome completo</Label>
               <Input
                 id="name"
                 type="text"
                 value={purchaseData.name}
                 onChange={(e) => setPurchaseData(prev => ({ ...prev, name: e.target.value }))}
-                className="bg-dark-tertiary border-dark-tertiary text-text-primary"
+                className="bg-dark-tertiary border-dark-tertiary text-text-primary mt-1"
                 placeholder="Seu nome completo"
                 required
               />
             </div>
             <div>
-              <Label htmlFor="email" className="text-text-primary">E-mail</Label>
+              <Label htmlFor="email" className="text-text-primary text-sm sm:text-base">E-mail</Label>
               <Input
                 id="email"
                 type="email"
                 value={purchaseData.email}
                 onChange={(e) => setPurchaseData(prev => ({ ...prev, email: e.target.value }))}
-                className="bg-dark-tertiary border-dark-tertiary text-text-primary"
+                className="bg-dark-tertiary border-dark-tertiary text-text-primary mt-1"
                 placeholder="seu@email.com"
                 required
               />
             </div>
             <div className="text-center pt-4">
-              <p className="text-text-secondary mb-4">
-                Valor: <span className="text-accent-green font-bold text-xl">R$ 14,99</span>
+              <p className="text-text-secondary mb-4 text-sm sm:text-base">
+                Valor: <span className="text-accent-green font-bold text-lg sm:text-xl">R$ 14,99</span>
               </p>
               <CTAButton 
                 onClick={() => {}}

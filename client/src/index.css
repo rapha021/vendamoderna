@@ -104,6 +104,30 @@
   .animate-pulse-slow {
     animation: pulse 3s infinite;
   }
+
+  /* Mobile responsive adjustments */
+  .mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (max-width: 640px) {
+    .mobile-text-scale {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    
+    .mobile-grid-fix {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+    
+    .mobile-button-full {
+      width: 100%;
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+    }
+  }
 }
 
 @keyframes fadeIn {
