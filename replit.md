@@ -1,6 +1,12 @@
 # Overview
 
-This is a React-based landing page application for an adult content subscription service. It's built as a full-stack web application with a modern tech stack including React frontend, Express.js backend, and PostgreSQL database. The application features a landing page designed to capture leads and process purchases for premium content access.
+This is a React-based landing page application for an adult content subscription service. Originally built as a full-stack web application, it has been converted to a static build for easy deployment. The application features a modern, mobile-responsive landing page designed to capture leads and process purchases for premium content access at R$14,99.
+
+## Current Status (August 2025)
+- ✅ Fully responsive landing page completed
+- ✅ Mobile-first design implemented
+- ✅ Static build generated in `/public` folder
+- ✅ Ready for deployment to any static hosting service
 
 # User Preferences
 
@@ -82,7 +88,17 @@ Preferred communication style: Simple, everyday language.
 - **nanoid**: Unique ID generation
 
 ## Deployment Considerations
-- **Environment Variables**: DATABASE_URL for database connection
-- **Build Output**: Static frontend assets and bundled server code
-- **Session Storage**: PostgreSQL-backed sessions for user state
-- **Payment Integration**: Placeholder for external payment processor integration
+- **Static Build**: Complete HTML, CSS, and JavaScript files in `/public` folder
+- **No Server Required**: Can be deployed to any static hosting service
+- **Mobile Optimized**: Fully responsive design with touch-friendly interfaces
+- **SEO Ready**: Meta tags and structured content for search engines
+- **Performance**: Optimized assets with modern build tools (61KB CSS, 425KB JS)
+
+## Build Information
+- **Build Command**: `npm run build`
+- **Output Directory**: `/public`
+- **Files Generated**:
+  - `index.html` - Main page with SEO meta tags
+  - `assets/index-CvwVFtkP.css` - Compiled CSS (61KB)
+  - `assets/index-DO8okfOl.js` - Compiled JavaScript (425KB)
+- **Ready for**: Netlify, Vercel, GitHub Pages, Cloudflare Pages, or any static host
