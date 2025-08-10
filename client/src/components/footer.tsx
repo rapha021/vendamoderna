@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function Footer() {
   return (
-    <footer className="py-8 sm:py-12 px-4 bg-dark-primary border-t border-dark-tertiary">
+    <footer className="py-8 sm:py-12 px-4 bg-secondary/30 border-t border-border">
       <div className="max-w-4xl mx-auto text-center mobile-padding">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

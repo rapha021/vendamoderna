@@ -63,11 +63,11 @@ export function FAQSection({ onCTAClick }: FAQSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden"
+              className="bg-secondary/50 backdrop-blur-sm rounded-2xl border border-border overflow-hidden"
             >
               <button 
                 onClick={() => toggleFAQ(faq.id)}
-                className="w-full p-4 sm:p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                className="w-full p-4 sm:p-6 text-left flex items-center justify-between hover:bg-muted/50 transition-colors duration-300"
               >
                 <div className="flex items-start space-x-2 sm:space-x-3">
                   <faq.icon className="text-lg sm:text-xl text-accent-green h-5 w-5 sm:h-6 sm:w-6 mt-0.5" />
