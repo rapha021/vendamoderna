@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { CTAButton } from "./cta-button";
 import { Shield, Lock, Clock, CheckCircle } from "lucide-react";
+import bannerImage from "@assets/banner_header_1754956073282.png";
 
 interface NewHeroSectionProps {
   onCTAClick: () => void;
@@ -9,16 +10,14 @@ interface NewHeroSectionProps {
 export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
   return (
     <section className="pt-4 pb-16 sm:pt-8 sm:pb-20 px-4 bg-gradient-to-br from-background via-secondary/30 to-background w-full overflow-hidden">
-      {/* Banner/Photo Placeholder */}
+      {/* Product Banner */}
       <div className="w-full mb-8 sm:mb-12">
         <div className="max-w-4xl mx-auto">
-          <div className="w-full h-48 sm:h-64 md:h-80 bg-gray-200 rounded-2xl border-2 border-gray-300 flex items-center justify-center">
-            <div className="text-center p-6">
-              <div className="w-16 h-16 bg-gray-400 rounded-full mx-auto mb-4"></div>
-              <p className="text-gray-600 text-lg font-medium">Banner do Produto</p>
-              <p className="text-gray-500 text-sm mt-2">Inserir foto/banner aqui</p>
-            </div>
-          </div>
+          <img 
+            src={bannerImage} 
+            alt="Atividades Bíblicas - Material Educativo para Crianças" 
+            className="w-full h-auto rounded-2xl shadow-lg"
+          />
         </div>
       </div>
       

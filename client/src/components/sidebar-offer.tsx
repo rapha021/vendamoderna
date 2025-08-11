@@ -28,7 +28,7 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
         </h3>
         <div className="flex items-center justify-center space-x-2 mb-4">
           <span className="text-lg text-text-secondary line-through">De R$ 47</span>
-          <span className="text-3xl font-bold text-accent-green">R$ 4,99</span>
+          <span className="text-3xl font-bold text-accent-green">R$ 14,90</span>
         </div>
         <p className="text-sm text-destructive font-semibold mb-2">
           ⏰ Últimas unidades somente hoje!

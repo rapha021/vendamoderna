@@ -22,8 +22,8 @@ export function Footer() {
           viewport={{ once: true }}
           className="space-y-1 sm:space-y-2 text-text-secondary text-xs sm:text-sm mb-4 sm:mb-6"
         >
-          <p>CNPJ: 33.968.265/0001-37</p>
-          <p>Alfa Produções Digitais</p>
+          <p>CNPJ: 00000000</p>
+          <p>inserir nome da empresa</p>
           <p>Email: contato@inserirmarcaaqui.com</p>
           <p>INSERIR NOME DA MARCA AQUI - Copyright © 2020-2025. Todos os direitos reservados</p>
         </motion.div>

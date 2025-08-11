@@ -51,16 +51,7 @@ export function TestimonialsSection() {
             Depoimentos reais de pessoas que já usaram nossas atividades bíblicas no ministério infantil
           </p>
           
-          {/* Placeholder para prints de prova social */}
-          <div className="flex justify-center mb-8">
-            <div className="w-64 h-96 bg-gray-200 rounded-2xl border-2 border-gray-300 flex items-center justify-center">
-              <div className="text-center p-4">
-                <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-3"></div>
-                <p className="text-gray-600 text-sm font-medium">Print de Prova Social</p>
-                <p className="text-gray-500 text-xs mt-1">Inserir screenshot aqui</p>
-              </div>
-            </div>
-          </div>
+
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -99,6 +90,16 @@ export function TestimonialsSection() {
                   <p className="text-text-primary text-sm sm:text-base mb-3 leading-relaxed">
                     "{testimonial.text}"
                   </p>
+                  
+                  {/* Screenshot placeholder for each testimonial */}
+                  <div className="mb-4">
+                    <div className="w-32 h-20 bg-gray-200 rounded border border-gray-300 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-4 h-4 bg-gray-400 rounded mx-auto mb-1"></div>
+                        <p className="text-gray-600 text-xs">Print {index + 1}</p>
+                      </div>
+                    </div>
+                  </div>
                   
                   <div className="text-text-secondary text-sm">
                     <span className="font-semibold">{testimonial.name}</span>
