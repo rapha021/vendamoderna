@@ -8,8 +8,8 @@ interface NewHeroSectionProps {
 
 export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
   return (
-    <section className="pt-20 pb-16 sm:pt-24 sm:pb-20 px-4 bg-gradient-to-br from-background via-secondary/30 to-background">
-      <div className="max-w-6xl mx-auto text-center mobile-padding">
+    <section className="pt-20 pb-16 sm:pt-24 sm:pb-20 px-4 bg-gradient-to-br from-background via-secondary/30 to-background w-full overflow-hidden">
+      <div className="max-w-6xl mx-auto text-center mobile-padding w-full box-border">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

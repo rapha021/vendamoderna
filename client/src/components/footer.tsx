@@ -11,7 +11,7 @@ export function Footer() {
           viewport={{ once: true }}
           className="mb-4 sm:mb-6"
         >
-          <h4 className="text-base sm:text-lg font-semibold text-accent-green mb-2">Sementinhas de Cristo</h4>
+          <h4 className="text-base sm:text-lg font-semibold text-accent-green mb-2">Inserir nome da marca aqui</h4>
           <p className="text-text-secondary text-sm">✝️ 🙏</p>
         </motion.div>
         
@@ -24,8 +24,8 @@ export function Footer() {
         >
           <p>CNPJ: 33.968.265/0001-37</p>
           <p>Alfa Produções Digitais</p>
-          <p>Email: contato@sementinhasdecristo.com</p>
-          <p>SEMENTINHAS DE CRISTO - Copyright © 2020-2025. Todos os direitos reservados</p>
+          <p>Email: contato@inserirmarcaaqui.com</p>
+          <p>INSERIR NOME DA MARCA AQUI - Copyright © 2020-2025. Todos os direitos reservados</p>
         </motion.div>
         
         <motion.div 

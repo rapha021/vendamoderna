@@ -69,10 +69,24 @@
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  html {
+    overflow-x: hidden;
   }
 }
 
 @layer components {
+  .mobile-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-safe {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    width: 100%;
+    box-sizing: border-box;
+  }
   .gradient-border {
     background: linear-gradient(135deg, var(--accent-green), hsl(142, 76%, 28%));
     border-radius: 12px;

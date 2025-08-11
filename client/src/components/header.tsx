@@ -21,7 +21,7 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
             <span className="text-white font-bold text-sm">S</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-text-primary">Sementinhas de Cristo</h1>
+            <h1 className="text-xl font-bold text-text-primary">Inserir nome da marca aqui</h1>
             <p className="text-xs text-text-secondary">Atividades Bíblicas Infantis</p>
           </div>
         </div>

@@ -42,7 +42,7 @@ export function FAQSection({ onCTAClick }: FAQSectionProps) {
   };
 
   return (
-    <section className="py-16 sm:py-20 px-4">
+    <section className="py-16 sm:py-20 px-4 w-full overflow-hidden">
       <div className="max-w-4xl mx-auto mobile-padding">
         <motion.h2 
           initial={{ opacity: 0, y: 30 }}

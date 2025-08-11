@@ -88,7 +88,7 @@ export function NewHomePage() {
     <div className="min-h-screen bg-background text-text-primary">
       <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} />
       
-      <div className="lg:flex lg:space-x-8 lg:max-w-7xl lg:mx-auto lg:px-4">
+      <div className="lg:flex lg:space-x-8 lg:max-w-7xl lg:mx-auto lg:px-4 w-full overflow-hidden">
         <div className="lg:flex-1">
           <NewHeroSection onCTAClick={handleCTAClick} />
           <TargetAudienceSection />
@@ -96,7 +96,7 @@ export function NewHomePage() {
           <TestimonialsSection />
           
           {/* Bonus Section */}
-          <section className="py-16 sm:py-20 px-4 bg-background">
+          <section className="py-16 sm:py-20 px-4 bg-background w-full overflow-hidden">
             <div className="max-w-4xl mx-auto mobile-padding">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -165,7 +165,7 @@ export function NewHomePage() {
           </section>
 
           {/* Checkout Section */}
-          <section className="py-16 sm:py-20 px-4 bg-secondary/30">
+          <section className="py-16 sm:py-20 px-4 bg-secondary/30 w-full overflow-hidden">
             <div className="max-w-4xl mx-auto mobile-padding">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}

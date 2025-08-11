@@ -34,7 +34,7 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 px-4 bg-secondary/30">
+    <section className="py-16 sm:py-20 px-4 bg-secondary/30 w-full overflow-hidden">
       <div className="max-w-6xl mx-auto mobile-padding">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,9 +47,20 @@ export function TestimonialsSection() {
             <Quote className="text-accent-green mr-3 inline h-8 w-8" />
             O que dizem mães e professoras que já usaram o kit
           </h2>
-          <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
             Depoimentos reais de pessoas que já usaram nossas atividades bíblicas no ministério infantil
           </p>
+          
+          {/* Placeholder para prints de prova social */}
+          <div className="flex justify-center mb-8">
+            <div className="w-64 h-96 bg-gray-200 rounded-2xl border-2 border-gray-300 flex items-center justify-center">
+              <div className="text-center p-4">
+                <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-3"></div>
+                <p className="text-gray-600 text-sm font-medium">Print de Prova Social</p>
+                <p className="text-gray-500 text-xs mt-1">Inserir screenshot aqui</p>
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">

@@ -34,7 +34,7 @@ export function ContentExamplesSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 px-4 bg-background">
+    <section className="py-16 sm:py-20 px-4 bg-background w-full overflow-hidden">
       <div className="max-w-6xl mx-auto mobile-padding">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
