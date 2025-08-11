@@ -17,13 +17,13 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
           className="mb-8 sm:mb-12"
         >
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8 leading-tight text-text-primary">
-            Cansado de Conteúdo <span className="text-accent-green">Limitado</span>?
+            Cansada de <span className="text-accent-green">Improvisar</span> nas Aulas do Ministério Infantil?
             <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl text-text-secondary">Desbloqueie o Acesso Premium</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl text-text-secondary">Receba +450 atividades bíblicas prontas para imprimir e usar!</span>
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
-            Tenha acesso ilimitado ao conteúdo mais exclusivo da internet com nossa área de membros privada e segura.
+            O material completo contém historinhas e mais de 450 atividades para crianças de 2 até 12 anos de idade.
           </p>
         </motion.div>
 
@@ -35,9 +35,9 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {[
-              { icon: CheckCircle, text: "Mais de 500 fotos exclusivas em alta qualidade" },
-              { icon: CheckCircle, text: "100+ vídeos HD com conteúdo inédito" },
-              { icon: CheckCircle, text: "Atualizações semanais com novo material" }
+              { icon: CheckCircle, text: "Mais de 450 atividades bíblicas para imprimir" },
+              { icon: CheckCircle, text: "Historinhas e atividades para crianças de 2-12 anos" },
+              { icon: CheckCircle, text: "Material pronto para usar no Ministério Infantil" }
             ].map((item, index) => (
               <div 
                 key={index}
@@ -58,10 +58,10 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
         >
           <div className="bg-accent-green/10 border-2 border-accent-green rounded-3xl p-6 sm:p-8 inline-block">
             <p className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 text-text-primary">
-              Apenas <span className="text-accent-green">R$ 14,99</span>
+              Apenas <span className="text-accent-green">R$ 4,99</span>
             </p>
             <p className="text-text-secondary text-sm sm:text-base">
-              Pagamento único • Sem mensalidade • Acesso vitalício
+              Promoção válida por tempo limitado • Pagamento único
             </p>
           </div>
         </motion.div>

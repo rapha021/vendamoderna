@@ -4,31 +4,31 @@ import { Play, Image, Star, Eye } from "lucide-react";
 export function ContentExamplesSection() {
   const contentExamples = [
     {
-      type: "photo",
-      title: "Galeria Premium",
-      description: "Mais de 500 fotos em alta resolução",
-      preview: "🔒 Conteúdo Restrito +18",
+      type: "activities",
+      title: "Atividades Bíblicas",
+      description: "Mais de 450 atividades prontas para imprimir",
+      preview: "✝️ Caderninho de Orações",
       icon: Image
     },
     {
-      type: "video",
-      title: "Vídeos Exclusivos",
-      description: "100+ vídeos HD disponíveis",
-      preview: "🔒 Conteúdo Restrito +18",
+      type: "stories",
+      title: "Historinhas Bíblicas",
+      description: "Histórias ilustradas para crianças",
+      preview: "📖 A Criação da Humanidade",
       icon: Play
     },
     {
-      type: "premium",
-      title: "Coleção VIP",
-      description: "Material mais exclusivo disponível",
-      preview: "🔒 Conteúdo Restrito +18",
+      type: "games",
+      title: "Caça Palavras Bíblico",
+      description: "50 diferentes tipos de caça palavras",
+      preview: "🎯 Velho Testamento - Parte I",
       icon: Star
     },
     {
-      type: "live",
-      title: "Conteúdo Ao Vivo",
-      description: "Transmissões privadas exclusivas",
-      preview: "🔒 Conteúdo Restrito +18",
+      type: "planning",
+      title: "Planejamento Bíblico",
+      description: "Guias organizados para suas aulas",
+      preview: "📅 Planejamento Bíblico 2024",
       icon: Eye
     }
   ];
@@ -45,14 +45,14 @@ export function ContentExamplesSection() {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
             <Image className="text-accent-green mr-3 inline h-8 w-8" />
-            Exemplos do Conteúdo Premium
+            Exemplos de Atividades
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-6">
-            Tenha uma prévia do que você encontrará em nossa área de membros exclusiva
+            O material completo contém historinhas e mais de 450 atividades para crianças de 2 até 12 anos de idade
           </p>
-          <div className="bg-destructive/10 border border-destructive/30 rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto">
-            <p className="text-destructive font-semibold text-sm sm:text-base">
-              ⚠️ ATENÇÃO: Este conteúdo é exclusivo para maiores de 18 anos
+          <div className="bg-accent-green/10 border border-accent-green/30 rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto">
+            <p className="text-accent-green font-semibold text-sm sm:text-base">
+              ✝️ Atividades bíblicas para aproximar as crianças da palavra de Deus
             </p>
           </div>
         </motion.div>

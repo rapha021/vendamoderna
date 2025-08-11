@@ -4,31 +4,31 @@ import { Star, Quote } from "lucide-react";
 export function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Marina S.",
+      name: "Maria José S.",
       location: "São Paulo, SP",
       rating: 5,
-      text: "Finalmente encontrei uma plataforma séria com conteúdo de qualidade. Vale muito a pena, o material é incrível e sempre tem coisa nova.",
+      text: "Finalmente encontrei atividades de qualidade para usar no ministério infantil. As crianças adoram e os pais elogiam muito!",
       verified: true
     },
     {
-      name: "Rafael M.",
+      name: "Pastor Rafael M.",
       location: "Rio de Janeiro, RJ", 
       rating: 5,
-      text: "Melhor investimento que fiz! Por esse preço você tem acesso a muito conteúdo premium. Recomendo totalmente.",
+      text: "Melhor investimento que fiz para a igreja! Material rico em conteúdo bíblico e muito bem organizado. Recomendo!",
       verified: true
     },
     {
-      name: "Amanda L.",
+      name: "Ana Paula L.",
       location: "Belo Horizonte, MG",
       rating: 5,
-      text: "Adorei a discrição e privacidade. Me sinto segura usando a plataforma e o conteúdo supera as expectativas.",
+      text: "As atividades são perfeitas para ensinar a palavra de Deus de forma lúdica. Minhas filhas amam fazer as atividades!",
       verified: true
     },
     {
-      name: "Carlos P.",
+      name: "Professor Carlos P.",
       location: "Porto Alegre, RS",
       rating: 5,
-      text: "Interface limpa, fácil de usar e com muito conteúdo exclusivo. Comprei há 3 meses e não me arrependo.",
+      text: "Material muito bem elaborado e fácil de imprimir. Uso nas aulas da escolinha dominical há 6 meses e é um sucesso!",
       verified: true
     }
   ];
@@ -45,10 +45,10 @@ export function TestimonialsSection() {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
             <Quote className="text-accent-green mr-3 inline h-8 w-8" />
-            O que Dizem Nossos Membros
+            O que dizem mães e professoras que já usaram o kit
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
-            Depoimentos reais de pessoas que já fizeram parte da nossa comunidade exclusiva
+            Depoimentos reais de pessoas que já usaram nossas atividades bíblicas no ministério infantil
           </p>
         </motion.div>
 

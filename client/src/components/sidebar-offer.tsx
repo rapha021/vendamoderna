@@ -8,10 +8,10 @@ interface SidebarOfferProps {
 
 export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
   const benefits = [
-    { icon: Shield, text: "Acesso 100% seguro e privado" },
-    { icon: Clock, text: "Disponível 24/7" },
-    { icon: RefreshCw, text: "Atualizações semanais" },
-    { icon: Lock, text: "Área de membros exclusiva" }
+    { icon: Shield, text: "Arquivos em PDF para imprimir" },
+    { icon: Clock, text: "Mais de 450 atividades bíblicas" },
+    { icon: RefreshCw, text: "5 bônus exclusivos" },
+    { icon: Lock, text: "Receba direto no zap" }
   ];
 
   return (
@@ -24,14 +24,14 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
     >
       <div className="text-center mb-6">
         <h3 className="text-2xl font-bold text-text-primary mb-2">
-          🔥 OFERTA ESPECIAL
+          🔥 PROMOÇÃO ESPECIAL
         </h3>
         <div className="flex items-center justify-center space-x-2 mb-4">
-          <span className="text-lg text-text-secondary line-through">R$ 39,99</span>
-          <span className="text-3xl font-bold text-accent-green">R$ 14,99</span>
+          <span className="text-lg text-text-secondary line-through">De R$ 47</span>
+          <span className="text-3xl font-bold text-accent-green">R$ 4,99</span>
         </div>
         <p className="text-sm text-destructive font-semibold mb-2">
-          ⏰ Oferta por tempo limitado!
+          ⏰ Últimas unidades somente hoje!
         </p>
       </div>
 
@@ -45,15 +45,15 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
       </div>
 
       <div className="bg-background/50 rounded-xl p-4 mb-6">
-        <h4 className="font-bold text-text-primary mb-2">🛡️ Garantia Total:</h4>
+        <h4 className="font-bold text-text-primary mb-2">🛡️ Satisfação Garantida:</h4>
         <p className="text-xs text-text-secondary mb-2">
           • 7 dias para solicitar reembolso
         </p>
         <p className="text-xs text-text-secondary mb-2">
-          • Política de privacidade rigorosa
+          • Material pronto para imprimir
         </p>
         <p className="text-xs text-text-secondary">
-          • Suporte dedicado 24/7
+          • Pagamento único - sem mensalidades
         </p>
       </div>
 
@@ -70,7 +70,7 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
         onClick={onCTAClick}
         className="w-full text-lg py-3"
       >
-        🚀 GARANTIR AGORA
+        🚀 QUERO COMPRAR
       </CTAButton>
 
       <p className="text-xs text-text-secondary text-center mt-3">

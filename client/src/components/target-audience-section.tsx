@@ -3,19 +3,19 @@ import { Check, X, Users, Target } from "lucide-react";
 
 export function TargetAudienceSection() {
   const idealCustomer = [
-    "Pessoas maiores de 18 anos que buscam conteúdo premium",
-    "Quem valoriza qualidade e exclusividade",
-    "Usuários que querem acesso ilimitado sem mensalidade",
-    "Pessoas que priorizam privacidade e discrição",
-    "Quem busca conteúdo atualizado regularmente"
+    "Deseja materiais de qualidade para usar no Ministério infantil",
+    "Não tem tempo para criar suas aulas e deseja facilitar sua rotina",
+    "Deseja aproximar as crianças da palavra de Deus",
+    "Quer deixar as crianças longe de eletrônicos",
+    "Busca atividades bíblicas prontas para imprimir"
   ];
 
   const notFor = [
-    "Menores de 18 anos (conteúdo restrito)",
-    "Pessoas que buscam conteúdo gratuito",
-    "Quem não se sente confortável com material adulto",
-    "Usuários que preferem conteúdo mainstream",
-    "Pessoas que não valorizam exclusividade"
+    "Não quer que seu filho cresça nos caminhos do senhor",
+    "Não possui 10 minutos por dia para aplicar",
+    "Não se preocupa com o conteúdo que as crianças vêem na internet",
+    "Não valoriza materiais de ensino bíblico",
+    "Prefere improvisar nas aulas sem planejamento"
   ];
 
   return (

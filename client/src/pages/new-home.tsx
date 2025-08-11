@@ -106,24 +106,39 @@ export function NewHomePage() {
                 className="text-center mb-12"
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
-                  🎁 Bônus Exclusivos
+                  🎁 Receba 5 Bônus Especiais
                 </h2>
                 <p className="text-lg sm:text-xl text-text-secondary">
-                  Além de todo o conteúdo premium, você também ganha:
+                  Além das +450 atividades bíblicas, você também ganha:
                 </p>
               </motion.div>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "Pack de Boas-Vindas",
-                    description: "50 fotos exclusivas disponíveis imediatamente após a compra",
-                    value: "R$ 19,99"
+                    title: "BÔNUS 1 - 50 Caça Palavras Bíblico",
+                    description: "Tenha acesso a 50 diferentes tipos de caça palavras para fixar ainda mais o aprendizado.",
+                    value: "GRÁTIS"
                   },
                   {
-                    title: "Acesso Prioritário",
-                    description: "Seja o primeiro a ver os novos conteúdos antes de todos",
-                    value: "R$ 9,99"
+                    title: "BÔNUS 2 - Orações para Crianças",
+                    description: "A oração é uma das maneiras mais importantes de cultivarmos uma relação pessoal com Deus.",
+                    value: "GRÁTIS"
+                  },
+                  {
+                    title: "BÔNUS 3 - Dicas para começar no Ministério Infantil",
+                    description: "Separamos 20 dicas e orientações essenciais para iniciar no Ministério Infantil.",
+                    value: "GRÁTIS"
+                  },
+                  {
+                    title: "BÔNUS 4 - Meu Caderninho de Orações",
+                    description: "Guia Ilustrado para as crianças anotarem os ensinamentos das aulas.",
+                    value: "GRÁTIS"
+                  },
+                  {
+                    title: "BÔNUS 5 - Quiz Bíblico",
+                    description: "Um kit com diversos Quiz da Bíblia para divertir as crianças",
+                    value: "GRÁTIS"
                   }
                 ].map((bonus, index) => (
                   <motion.div
@@ -141,7 +156,7 @@ export function NewHomePage() {
                       {bonus.description}
                     </p>
                     <p className="text-accent-green font-bold">
-                      Valor: {bonus.value} - GRÁTIS
+                      {bonus.value}
                     </p>
                   </motion.div>
                 ))}
@@ -160,10 +175,10 @@ export function NewHomePage() {
                 className="text-center mb-12"
               >
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
-                  💳 Finalizar Compra
+                  💳 Quero Meu Kit Agora!
                 </h2>
                 <p className="text-lg sm:text-xl text-text-secondary mb-8">
-                  Após o pagamento, você receberá acesso imediato por email
+                  Receba o material direto no WhatsApp e no e-mail
                 </p>
               </motion.div>
 
@@ -171,9 +186,9 @@ export function NewHomePage() {
                 <div className="bg-background/80 rounded-2xl p-6 sm:p-8 border border-border">
                   <div className="text-center mb-6">
                     <div className="text-4xl sm:text-5xl font-bold text-text-primary mb-2">
-                      R$ <span className="text-accent-green">14,99</span>
+                      R$ <span className="text-accent-green">4,99</span>
                     </div>
-                    <p className="text-text-secondary">Pagamento único - Sem mensalidades</p>
+                    <p className="text-text-secondary">Promoção por tempo limitado - Pagamento único</p>
                   </div>
 
                   <CTAButton 
@@ -255,7 +270,7 @@ export function NewHomePage() {
             </div>
             <div className="text-center pt-4">
               <p className="text-text-secondary mb-4 text-sm sm:text-base">
-                Valor: <span className="text-accent-green font-bold text-lg sm:text-xl">R$ 14,99</span>
+                Valor: <span className="text-accent-green font-bold text-lg sm:text-xl">R$ 4,99</span>
               </p>
               <CTAButton 
                 onClick={() => {}}

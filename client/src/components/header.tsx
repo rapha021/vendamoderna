@@ -18,11 +18,11 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 rounded-full bg-accent-green flex items-center justify-center">
-            <span className="text-white font-bold text-sm">P</span>
+            <span className="text-white font-bold text-sm">S</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-text-primary">Priv Desbloqueado</h1>
-            <p className="text-xs text-text-secondary">Conteúdo Premium Exclusivo</p>
+            <h1 className="text-xl font-bold text-text-primary">Sementinhas de Cristo</h1>
+            <p className="text-xs text-text-secondary">Atividades Bíblicas Infantis</p>
           </div>
         </div>
         

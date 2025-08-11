@@ -12,28 +12,28 @@ export function FAQSection({ onCTAClick }: FAQSectionProps) {
 
   const faqs = [
     {
-      id: "access",
+      id: "delivery",
       icon: Package,
-      question: "O que vou ter acesso?",
-      answer: "Acesso imediato à nossa área de membros com todo o conteúdo +18 em desenho animado, além do grupo VIP no Telegram."
+      question: "O material vai chegar na minha casa?",
+      answer: "NÃO, nada será enviado para sua residência. O produto é TOTALMENTE DIGITAL, você recebe o acesso pelo seu WhatsApp e E-mail."
     },
     {
-      id: "link", 
+      id: "age", 
       icon: Link,
-      question: "Como recebo o link?",
-      answer: "Assim que seu pagamento for confirmado, você recebe o link direto no seu e-mail. É simples, rápido e sem complicações."
+      question: "Para quantos anos é indicado?",
+      answer: "Indicado para crianças entre 2 a 12 anos de idade."
     },
     {
-      id: "anonymous",
+      id: "support",
       icon: Lock,
-      question: "É anônimo?",
-      answer: "Totalmente. Nenhuma informação sensível aparece na sua fatura, e seus dados ficam 100% protegidos."
+      question: "Eu terei suporte?",
+      answer: "Entramos em contato via WhatsApp com o cliente no momento da compra para dar todo o suporte, caso surgir alguma dúvida."
     },
     {
-      id: "refund",
+      id: "church",
       icon: DollarSign,
-      question: "Tenho direito a reembolso?",
-      answer: "Sim. Se você não ficar satisfeito, é só pedir que devolvemos seu dinheiro."
+      question: "Posso utilizar o material no ministério da minha igreja?",
+      answer: "Sim, nosso material é amplamente utilizado em escolinha dominicais, ministérios infantis, catequeses e entre outras formas de ensinos Bíblicos."
     }
   ];
 

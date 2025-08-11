@@ -1,6 +1,6 @@
 # Overview
 
-This is a React-based landing page application for an adult content subscription service. Originally built as a full-stack web application, it has been converted to a static build for easy deployment. The application features a modern, mobile-responsive landing page designed to capture leads and process purchases for premium content access at R$14,99.
+This is a React-based landing page application for "Sementinhas de Cristo" - biblical children's activities. Originally built as a full-stack web application, it has been converted to a static build for easy deployment. The application features a modern, mobile-responsive landing page designed to capture leads and process purchases for biblical educational materials at R$4,99.
 
 ## Current Status (August 2025)
 - ✅ Fully responsive landing page completed

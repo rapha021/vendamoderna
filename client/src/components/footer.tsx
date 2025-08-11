@@ -11,8 +11,8 @@ export function Footer() {
           viewport={{ once: true }}
           className="mb-4 sm:mb-6"
         >
-          <h4 className="text-base sm:text-lg font-semibold text-accent-green mb-2">Priv Desbloqueado</h4>
-          <p className="text-text-secondary text-sm">🔞 🔥</p>
+          <h4 className="text-base sm:text-lg font-semibold text-accent-green mb-2">Sementinhas de Cristo</h4>
+          <p className="text-text-secondary text-sm">✝️ 🙏</p>
         </motion.div>
         
         <motion.div 
@@ -22,10 +22,10 @@ export function Footer() {
           viewport={{ once: true }}
           className="space-y-1 sm:space-y-2 text-text-secondary text-xs sm:text-sm mb-4 sm:mb-6"
         >
-          <p>83.291.740/0023-61</p>
-          <p>Rua das Estrelas, 69 - Bairro Luxúria, São Paulo</p>
-          <p>Email: contato@privdesbloqueado.com</p>
-          <p>Todos os direitos reservados © 2025</p>
+          <p>CNPJ: 33.968.265/0001-37</p>
+          <p>Alfa Produções Digitais</p>
+          <p>Email: contato@sementinhasdecristo.com</p>
+          <p>SEMENTINHAS DE CRISTO - Copyright © 2020-2025. Todos os direitos reservados</p>
         </motion.div>
         
         <motion.div 
@@ -35,9 +35,9 @@ export function Footer() {
           viewport={{ once: true }}
           className="text-xs text-text-secondary border-t border-dark-tertiary pt-4 sm:pt-6"
         >
-          <p className="mb-2">Este site é apenas para maiores de 18 anos. Conteúdo adulto e exclusivo</p>
+          <p className="mb-2">Atividades bíblicas para crianças de 2 a 12 anos. Material educativo cristão</p>
           <p>
-            🚀 <span className="text-accent-green">para quem curte exclusividade.</span>
+            ✝️ <span className="text-accent-green">Para aproximar as crianças da palavra de Deus.</span>
           </p>
         </motion.div>
       </div>
