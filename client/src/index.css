@@ -58,6 +58,15 @@
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
   --ring: hsl(142, 76%, 36%);
+  
+  /* Custom dark theme colors */
+  --light-primary: hsl(240, 10%, 3.9%);
+  --light-secondary: hsl(240, 3.7%, 15.9%);
+  --light-tertiary: hsl(240, 3.7%, 25%);
+  --accent-green: hsl(142, 76%, 36%);
+  --accent-red: hsl(0, 84%, 60%);
+  --text-primary: hsl(0, 0%, 98%);
+  --text-secondary: hsl(240, 5%, 64.9%);
 }
 
 @layer base {
