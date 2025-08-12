@@ -3,19 +3,19 @@ import { Check, X, Users, Target } from "lucide-react";
 
 export function TargetAudienceSection() {
   const idealCustomer = [
-    "Deseja materiais de qualidade para usar no Ministério infantil",
-    "Não tem tempo para criar suas aulas e deseja facilitar sua rotina",
-    "Deseja aproximar as crianças da palavra de Deus",
-    "Quer deixar as crianças longe de eletrônicos",
-    "Busca atividades bíblicas prontas para imprimir"
+    "Quer ter materiais prontos, bonitos e de qualidade para usar no Ministério Infantil ou em casa.",
+    "Busca economizar tempo, sem precisar criar atividades do zero.",
+    "Deseja aproximar as crianças da Palavra de Deus de forma divertida e envolvente.",
+    "Quer oferecer alternativas criativas para que elas passem menos tempo em telas e mais tempo aprendendo.",
+    "Gosta de atividades bíblicas práticas, prontas para imprimir e aplicar imediatamente."
   ];
 
   const notFor = [
-    "Não quer que seu filho cresça nos caminhos do senhor",
-    "Não possui 10 minutos por dia para aplicar",
-    "Não se preocupa com o conteúdo que as crianças vêem na internet",
-    "Não valoriza materiais de ensino bíblico",
-    "Prefere improvisar nas aulas sem planejamento"
+    "Não vê importância em ensinar princípios cristãos desde a infância.",
+    "Não tem nem 10 minutos por dia para dedicar às crianças.",
+    "Não se preocupa com o tipo de conteúdo que as crianças consomem.",
+    "Não valoriza materiais de ensino estruturados e com base bíblica.",
+    "Prefere improvisar as aulas sem planejamento ou sequência de ensino."
   ];
 
   return (
@@ -30,7 +30,7 @@ export function TargetAudienceSection() {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
             <Target className="text-accent-green mr-3 inline h-8 w-8" />
-            Este Acesso é Para Você?
+            Indicado para Você Se:
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
             Descubra se o nosso conteúdo premium é ideal para o seu perfil
@@ -47,7 +47,7 @@ export function TargetAudienceSection() {
           >
             <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-accent-green flex items-center">
               <Check className="mr-3 h-6 w-6" />
-              PERFEITO PARA VOCÊ SE:
+              INDICADO PARA VOCÊ SE:
             </h3>
             <div className="space-y-4">
               {idealCustomer.map((item, index) => (
@@ -75,7 +75,7 @@ export function TargetAudienceSection() {
           >
             <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-destructive flex items-center">
               <X className="mr-3 h-6 w-6" />
-              NÃO É PARA VOCÊ SE:
+              TALVEZ NÃO SEJA PARA VOCÊ SE:
             </h3>
             <div className="space-y-4">
               {notFor.map((item, index) => (

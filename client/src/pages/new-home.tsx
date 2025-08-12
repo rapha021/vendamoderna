@@ -109,35 +109,35 @@ export function NewHomePage() {
                   🎁 Receba 5 Bônus Especiais
                 </h2>
                 <p className="text-lg sm:text-xl text-text-secondary">
-                  Além das +450 atividades bíblicas, você também ganha:
+                  Além da Coleção Premium com 450+ atividades, você também ganha:
                 </p>
               </motion.div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "BÔNUS 1 - 50 Caça Palavras Bíblico",
-                    description: "Tenha acesso a 50 diferentes tipos de caça palavras para fixar ainda mais o aprendizado.",
+                    title: "🧩 BÔNUS 1 - Desafios Bíblicos – 50 Caça-Palavras para Crianças",
+                    description: "Atividades divertidas e educativas para ajudar as crianças a fixarem passagens e personagens bíblicos. São 50 modelos exclusivos que estimulam o raciocínio e fortalecem o conhecimento bíblico de forma lúdica.",
                     value: "GRÁTIS"
                   },
                   {
-                    title: "BÔNUS 2 - Orações para Crianças",
-                    description: "A oração é uma das maneiras mais importantes de cultivarmos uma relação pessoal com Deus.",
+                    title: "🙏 BÔNUS 2 - Guia Infantil de Oração – Palavras que Aproximam de Deus",
+                    description: "Um guia simples e ilustrado com orações curtas e significativas, perfeito para ensinar os pequenos a conversar com Deus. Um recurso essencial para cultivar a fé desde cedo.",
                     value: "GRÁTIS"
                   },
                   {
-                    title: "BÔNUS 3 - Dicas para começar no Ministério Infantil",
-                    description: "Separamos 20 dicas e orientações essenciais para iniciar no Ministério Infantil.",
+                    title: "🌱 BÔNUS 3 - Passo a Passo do Ministério Infantil – 20 Estratégias Essenciais",
+                    description: "Um manual prático com 20 estratégias testadas e aprovadas para iniciar ou fortalecer o seu Ministério Infantil. Descubra como engajar crianças, criar rotinas e transformar vidas através da Palavra.",
                     value: "GRÁTIS"
                   },
                   {
-                    title: "BÔNUS 4 - Meu Caderninho de Orações",
-                    description: "Guia Ilustrado para as crianças anotarem os ensinamentos das aulas.",
+                    title: "📖 BÔNUS 4 - Diário de Fé – Anotações e Orações para Crianças",
+                    description: "Um caderno ilustrado para que as crianças registrem aprendizados, versículos e orações após as aulas. Um jeito especial de incentivar a reflexão e manter viva a conexão com Deus.",
                     value: "GRÁTIS"
                   },
                   {
-                    title: "BÔNUS 5 - Quiz Bíblico",
-                    description: "Um kit com diversos Quiz da Bíblia para divertir as crianças",
+                    title: "🎯 BÔNUS 5 - Super Quiz da Bíblia – Diversão e Aprendizado Cristão",
+                    description: "Um kit repleto de perguntas e respostas sobre histórias, personagens e curiosidades bíblicas. Aprender nunca foi tão divertido para as crianças e para toda a família.",
                     value: "GRÁTIS"
                   }
                 ].map((bonus, index) => (
@@ -186,7 +186,7 @@ export function NewHomePage() {
                 <div className="bg-background/80 rounded-2xl p-6 sm:p-8 border border-border">
                   <div className="text-center mb-6">
                     <div className="text-4xl sm:text-5xl font-bold text-text-primary mb-2">
-                      R$ <span className="text-accent-green">4,99</span>
+                      R$ <span className="text-accent-green">14,90</span>
                     </div>
                     <p className="text-text-secondary">Promoção por tempo limitado - Pagamento único</p>
                   </div>

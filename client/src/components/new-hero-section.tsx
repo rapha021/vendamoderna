@@ -31,11 +31,11 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8 leading-tight text-text-primary">
             Cansada de <span className="text-accent-green">Improvisar</span> nas Aulas do Ministério Infantil?
             <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl text-text-secondary">Receba +450 atividades bíblicas prontas para imprimir e usar!</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl text-text-secondary">Coleção Premium – 450+ Atividades Cristãs para Crianças</span>
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
-            O material completo contém historinhas e mais de 450 atividades para crianças de 2 até 12 anos de idade.
+            Uma seleção incrível de mais de 450 páginas de atividades bíblicas para colorir, recortar, montar e brincar — tudo pronto para imprimir. Ideal para escolas dominicais, ministérios infantis e pais que querem ensinar a Palavra de Deus de forma criativa e envolvente.
           </p>
         </motion.div>
 
