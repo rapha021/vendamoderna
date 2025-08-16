@@ -93,7 +93,7 @@ export function NewHomePage() {
 
   return (
     <div className="min-h-screen bg-background text-text-primary">
-      {/* <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} /> */}
+      <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} />
 
       <div className="lg:flex lg:space-x-8 lg:max-w-7xl lg:mx-auto lg:px-4 w-full overflow-hidden">
         <div className="lg:flex-1">
@@ -224,7 +224,7 @@ export function NewHomePage() {
                     <p className="text-text-secondary mb-4 font-semibold leading-relaxed">
                       {bonus.description}
                     </p>
-                    <div className="bg-gradient-to-r from-accent-green to-accent-blue text-white px-4 py-2 rounded-full text-center font-black drop-shadow-lg">
+                    <div className="bg-accent-green text-white px-4 py-2 rounded-xl text-center font-bold drop-shadow-lg">
                       {bonus.value}
                     </div>
                   </motion.div>

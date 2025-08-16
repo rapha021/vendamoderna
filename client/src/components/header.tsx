@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CTAButton } from "./cta-button";
 import { ShoppingCart, HelpCircle } from "lucide-react";
-import { ThemeToggle } from "./theme-toggle";
+// ThemeToggle removed - light theme only
 import { brandName } from "@/lib/utils";
 
 interface HeaderProps {
@@ -46,7 +46,6 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">
-          <ThemeToggle />
           <button 
             onClick={onBuyClick}
             className="flex items-center space-x-2 text-text-primary hover:text-accent-green transition-colors"
@@ -64,7 +63,6 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
         </nav>
         
         <div className="md:hidden flex items-center space-x-3">
-          <ThemeToggle />
           <CTAButton onClick={onBuyClick} className="py-2 px-4 text-sm">
             Comprar
           </CTAButton>

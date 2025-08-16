@@ -42,7 +42,7 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black mb-6 sm:mb-8 leading-tight text-text-primary drop-shadow-lg">
             Cansado(a) de <span className="text-accent-green bg-accent-green/10 px-3 py-1 rounded-2xl">Improvisar</span> nas Aulas do Ministério Infantil? 🤔
             <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl text-accent-purple font-extrabold bg-gradient-to-r from-accent-purple to-accent-blue bg-clip-text text-transparent">📚 Coleção Premium – 450+ Atividades Cristãs para Crianças ✨</span>
+            <span className="text-2xl sm:text-3xl md:text-4xl text-accent-purple font-extrabold">📚 Coleção Premium – 450+ Atividades Cristãs para Crianças ✨</span>
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">

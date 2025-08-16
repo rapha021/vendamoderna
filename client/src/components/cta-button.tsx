@@ -18,8 +18,8 @@ export function CTAButton({
   variant = "primary" 
 }: CTAButtonProps) {
   const baseClasses = variant === "primary" 
-    ? "bg-gradient-to-r from-accent-green to-accent-blue text-white font-black py-4 sm:py-6 px-8 sm:px-12 rounded-full text-lg sm:text-xl md:text-2xl shadow-2xl hover:shadow-accent-green/50 border-4 border-white/30 playful-shadow"
-    : "bg-gradient-to-r from-accent-purple to-accent-orange text-white font-black py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-xl hover:shadow-lg border-3 border-white/20";
+    ? "bg-accent-green text-white font-bold py-4 sm:py-6 px-8 sm:px-12 rounded-2xl text-lg sm:text-xl md:text-2xl shadow-xl hover:shadow-2xl border-3 border-accent-green/30 playful-shadow"
+    : "bg-accent-purple text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-base sm:text-lg shadow-lg hover:shadow-xl border-2 border-accent-purple/30";
 
   return (
     <motion.div

@@ -43,39 +43,7 @@
   --text-secondary: hsl(220, 20%, 50%); /* Medium blue text */
 }
 
-.dark {
-  --background: hsl(250, 40%, 15%); /* Dark purple background */
-  --foreground: hsl(45, 100%, 90%); /* Light cream text */
-  --card: hsl(260, 30%, 20%); /* Dark purple cards */
-  --card-foreground: hsl(45, 100%, 90%);
-  --popover: hsl(260, 30%, 20%);
-  --popover-foreground: hsl(45, 100%, 90%);
-  --primary: hsl(280, 80%, 60%); /* Bright purple */
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(250, 20%, 25%); /* Dark secondary */
-  --secondary-foreground: hsl(45, 100%, 90%);
-  --muted: hsl(250, 20%, 25%);
-  --muted-foreground: hsl(45, 50%, 70%);
-  --accent: hsl(30, 80%, 50%); /* Orange accent for dark */
-  --accent-foreground: hsl(0, 0%, 100%);
-  --destructive: hsl(0, 70%, 60%);
-  --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(280, 30%, 35%); /* Purple borders */
-  --input: hsl(260, 20%, 25%);
-  --ring: hsl(280, 80%, 60%);
-  
-  /* Custom dark childlike theme colors */
-  --light-primary: hsl(250, 40%, 15%);
-  --light-secondary: hsl(260, 30%, 20%);
-  --light-tertiary: hsl(250, 20%, 25%);
-  --accent-green: hsl(120, 50%, 50%);
-  --accent-red: hsl(0, 70%, 60%);
-  --accent-purple: hsl(280, 80%, 60%);
-  --accent-orange: hsl(30, 80%, 50%);
-  --accent-blue: hsl(200, 80%, 60%);
-  --text-primary: hsl(45, 100%, 90%);
-  --text-secondary: hsl(45, 50%, 70%);
-}
+/* Dark theme removed - optimized for light theme only */
 
 @layer base {
   * {
@@ -84,7 +52,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Comic Sans MS', 'Nunito', 'Fredoka One', cursive, sans-serif;
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-image: 
