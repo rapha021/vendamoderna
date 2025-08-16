@@ -1,0 +1,691 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo Premium - Acesso Exclusivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-primary': '#0F0F0F',
+                        'dark-secondary': '#1A1A1A',
+                        'dark-tertiary': '#2A2A2A',
+                        'accent-green': '#00D562',
+                        'text-primary': '#FFFFFF',
+                        'text-secondary': '#B3B3B3',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'pulse-slow': 'pulse 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gradient-border {
+            background: linear-gradient(135deg, #00D562, #00A651);
+            border-radius: 12px;
+            padding: 2px;
+        }
+        .gradient-border-content {
+            background: #1A1A1A;
+            border-radius: 10px;
+            height: 100%;
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #FF4444, #FF6B6B);
+        }
+        .cta-gradient:hover {
+            background: linear-gradient(135deg, #FF6B6B, #FF4444);
+        }
+    </style>
+</head>
+<body class="bg-dark-primary text-text-primary font-inter antialiased">
+    
+    <!-- @COMPONENT: HeroSection -->
+    <section class="relative min-h-screen flex items-center justify-center px-4 py-20">
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-primary via-dark-secondary to-dark-primary opacity-90"></div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto text-center animate-fade-in">
+            <div class="mb-8">
+                <span class="inline-flex items-center px-4 py-2 bg-accent-green/20 text-accent-green rounded-full text-sm font-medium mb-6">
+                    <i class="fas fa-fire mr-2"></i>
+                    ATENÇÃO! VOCÊ NUNCA MAIS VAI OLHAR ESSES DESENHOS DO MESMO JEITO...
+                    <i class="fas fa-fire ml-2"></i>
+                </span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <span class="text-accent-green">Conteúdo 100%</span><br>
+                <span class="bg-gradient-to-r from-text-primary to-text-secondary bg-clip-text text-transparent">
+                    sem censura, +18, explícito,<br>
+                    liberado e atualizado toda semana.
+                </span>
+            </h1>
+            
+            <!-- @COMPONENT: ContentGrid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
+                <!-- @MAP: contentImages.map(image => ( -->
+                <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                    <div class="gradient-border-content p-4 h-48 flex items-center justify-center">
+                        <!-- Placeholder for cartoon content image 1 -->
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                             alt="Conteúdo exclusivo 1" 
+                             class="w-full h-full object-cover rounded-lg"
+                             data-mock="true" 
+                             data-implementation="Replace with actual content image URLs" />
+                    </div>
+                </div>
+                
+                <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                    <div class="gradient-border-content p-4 h-48 flex items-center justify-center">
+                        <!-- Placeholder for cartoon content image 2 -->
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                             alt="Conteúdo exclusivo 2" 
+                             class="w-full h-full object-cover rounded-lg"
+                             data-mock="true" 
+                             data-implementation="Replace with actual content image URLs" />
+                    </div>
+                </div>
+                
+                <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                    <div class="gradient-border-content p-4 h-48 flex items-center justify-center">
+                        <!-- Placeholder for cartoon content image 3 -->
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                             alt="Conteúdo exclusivo 3" 
+                             class="w-full h-full object-cover rounded-lg"
+                             data-mock="true" 
+                             data-implementation="Replace with actual content image URLs" />
+                    </div>
+                </div>
+                
+                <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                    <div class="gradient-border-content p-4 h-48 flex items-center justify-center">
+                        <!-- Placeholder for cartoon content image 4 -->
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                             alt="Conteúdo exclusivo 4" 
+                             class="w-full h-full object-cover rounded-lg"
+                             data-mock="true" 
+                             data-implementation="Replace with actual content image URLs" />
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+            
+            <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                Se você <span class="text-accent-green font-semibold">cresceu assistindo aos desenhos animados</span> 
+                mais famosos da sua infância...
+            </p>
+            
+            <p class="text-lg md:text-xl text-text-primary mb-12">
+                Prepare-se, porque agora <span class="text-accent-green font-semibold">você vai ver</span> esses personagens 
+                <span class="text-accent-green font-semibold">de um jeito que você NUNCA imaginou.</span>
+            </p>
+            
+            <div class="animate-pulse-slow">
+                <i class="fas fa-chevron-down text-accent-green text-2xl"></i>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: PricingSection -->
+    <section class="py-20 px-4 bg-dark-secondary/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-dark-tertiary">
+                <div class="mb-8">
+                    <span class="inline-flex items-center px-4 py-2 bg-accent-green/20 text-accent-green rounded-full text-sm font-medium mb-6">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        ISSO É PRA QUEM TEM CORAGEM!
+                    </span>
+                </div>
+                
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 leading-relaxed">
+                    Imagine ter acesso a <span class="text-accent-green font-semibold">uma plataforma privada, segura e 100% discreta</span>,
+                    onde estão reunidos os melhores <span class="text-accent-green font-semibold">desenhos adultos +18</span>, feitos pra 
+                    quem gosta de se divertir sem trava nenhuma.
+                </p>
+                
+                <div class="mb-8">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                        Tudo isso e Muito Mais<br>
+                        Por Apenas <span class="text-accent-green">R$14,99</span> 
+                        <span class="text-2xl">🤑</span>
+                    </h2>
+                    <p class="text-text-secondary text-lg">
+                        (pagamento único!) <i class="fas fa-fire text-accent-green"></i>
+                    </p>
+                </div>
+                
+                <button class="cta-gradient text-white font-bold py-6 px-12 rounded-xl text-xl mb-8 w-full md:w-auto transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        data-event="click:handlePurchase"
+                        data-implementation="Should redirect to payment processing">
+                    <i class="fas fa-rocket mr-3"></i>
+                    Quero Meu Acesso AGORA!
+                </button>
+                
+                <!-- Additional content grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                    <!-- @MAP: additionalImages.map(image => ( -->
+                    <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                        <div class="gradient-border-content p-3 h-40 flex items-center justify-center">
+                            <!-- Placeholder for additional content image 1 -->
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" 
+                                 alt="Conteúdo adicional 1" 
+                                 class="w-full h-full object-cover rounded-lg"
+                                 data-mock="true" 
+                                 data-implementation="Replace with actual content image URLs" />
+                        </div>
+                    </div>
+                    
+                    <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                        <div class="gradient-border-content p-3 h-40 flex items-center justify-center">
+                            <!-- Placeholder for additional content image 2 -->
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" 
+                                 alt="Conteúdo adicional 2" 
+                                 class="w-full h-full object-cover rounded-lg"
+                                 data-mock="true" 
+                                 data-implementation="Replace with actual content image URLs" />
+                        </div>
+                    </div>
+                    
+                    <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                        <div class="gradient-border-content p-3 h-40 flex items-center justify-center">
+                            <!-- Placeholder for additional content image 3 -->
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" 
+                                 alt="Conteúdo adicional 3" 
+                                 class="w-full h-full object-cover rounded-lg"
+                                 data-mock="true" 
+                                 data-implementation="Replace with actual content image URLs" />
+                        </div>
+                    </div>
+                    
+                    <div class="gradient-border group cursor-pointer transform hover:scale-105 transition-all duration-300">
+                        <div class="gradient-border-content p-3 h-40 flex items-center justify-center">
+                            <!-- Placeholder for additional content image 4 -->
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200" 
+                                 alt="Conteúdo adicional 4" 
+                                 class="w-full h-full object-cover rounded-lg"
+                                 data-mock="true" 
+                                 data-implementation="Replace with actual content image URLs" />
+                        </div>
+                    </div>
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: PricingSection -->
+
+    <!-- @COMPONENT: BenefitsSection -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <!-- Main Benefits List -->
+            <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-dark-tertiary">
+                <div class="space-y-6">
+                    <!-- @MAP: benefits.map(benefit => ( -->
+                    <div class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-6 h-6 bg-accent-green rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-check text-dark-primary text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg text-text-primary group-hover:text-accent-green transition-colors duration-300">
+                                <span class="font-semibold">✅ Desenhos famosos</span>, agora sem nenhuma censura.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-6 h-6 bg-accent-green rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-check text-dark-primary text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg text-text-primary group-hover:text-accent-green transition-colors duration-300">
+                                <span class="font-semibold">✅ Atualizações semanais</span>, sempre com novidades quentíssimas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-6 h-6 bg-accent-green rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-check text-dark-primary text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg text-text-primary group-hover:text-accent-green transition-colors duration-300">
+                                <span class="font-semibold">✅ Área de membros organizada</span>, fácil de acessar direto do seu celular.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-6 h-6 bg-accent-green rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-check text-dark-primary text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg text-text-primary group-hover:text-accent-green transition-colors duration-300">
+                                <span class="font-semibold">✅ Conteúdo sem cortes</span>, sem censura, sem enrolação.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4 group">
+                        <div class="flex-shrink-0 w-6 h-6 bg-accent-green rounded-full flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-check text-dark-primary text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg text-text-primary group-hover:text-accent-green transition-colors duration-300">
+                                <span class="font-semibold">✅ Bônus VIP:</span> Acesso imediato a um grupo exclusivo no Telegram.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+
+            <!-- @COMPONENT: ExpandableSections -->
+            <div class="space-y-4">
+                <!-- @STATE: expandedSection:string = "" -->
+                
+                <!-- Desenhos Animados Section -->
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleSection('animated')"
+                            data-event="click:toggleSection"
+                            data-implementation="Toggle expanded state for animated section">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">⭐</span>
+                            <span class="text-lg font-semibold text-accent-green">Desenhos Animados +18</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="animated-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="animated-content">
+                        <p class="text-text-secondary">
+                            Os personagens que você cresceu assistindo... agora em cenas que você nunca imaginou!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Grupo VIP Section -->
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleSection('vip')"
+                            data-event="click:toggleSection"
+                            data-implementation="Toggle expanded state for VIP section">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">⭐</span>
+                            <span class="text-lg font-semibold text-accent-green">Grupo VIP no Telegram</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="vip-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="vip-content">
+                        <p class="text-text-secondary">
+                            Onde rola conteúdo extra, novidades, bastidores e muita interação.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Updates Section -->
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleSection('updates')"
+                            data-event="click:toggleSection"
+                            data-implementation="Toggle expanded state for updates section">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">⭐</span>
+                            <span class="text-lg font-semibold text-accent-green">Atualizações Semanais</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="updates-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="updates-content">
+                        <p class="text-text-secondary">
+                            Sempre tem coisa nova chegando. Nunca fica parado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Private Area Section -->
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleSection('private')"
+                            data-event="click:toggleSection"
+                            data-implementation="Toggle expanded state for private area section">
+                        <div class="flex items-center space-x-3">
+                            <span class="text-2xl">⭐</span>
+                            <span class="text-lg font-semibold text-accent-green">Área de Membros Privada e Segura</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="private-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="private-content">
+                        <p class="text-text-secondary">
+                            Tudo organizado, fácil de acessar e com total discrição.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_COMPONENT: ExpandableSections -->
+
+            <div class="text-center mt-12">
+                <p class="text-xl text-text-secondary mb-2">
+                    Acesso imediato ao conteúdo mais <span class="text-accent-green">🔥🔥</span> da internet
+                </p>
+                <p class="text-lg text-text-primary">
+                    Assine e <span class="text-accent-green font-semibold">desbloqueie as vantagens</span> exclusivas
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BenefitsSection -->
+
+    <!-- @COMPONENT: FinalCTASection -->
+    <section class="py-20 px-4 bg-dark-secondary/50">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-dark-tertiary">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                    <span class="text-2xl">🤑</span> É MAIS BARATO DO QUE UM LANCHE... E MUITO MAIS GOSTOSO!
+                </h2>
+                
+                <div class="mb-8">
+                    <h3 class="text-4xl md:text-5xl font-bold mb-4">
+                        Tudo isso e Muito Mais<br>
+                        Por Apenas <span class="text-accent-green">R$14,99</span> 
+                        <span class="text-2xl">🤑</span>
+                    </h3>
+                    <p class="text-text-secondary text-lg mb-8">
+                        (pagamento único!) <i class="fas fa-fire text-accent-green"></i>
+                    </p>
+                </div>
+                
+                <button class="cta-gradient text-white font-bold py-6 px-12 rounded-xl text-xl mb-8 w-full md:w-auto transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        data-event="click:handlePurchase"
+                        data-implementation="Should redirect to payment processing">
+                    <i class="fas fa-rocket mr-3"></i>
+                    Quero Meu Acesso AGORA!
+                </button>
+                
+                <div class="bg-dark-primary/50 rounded-xl p-6 mb-8">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-accent-green"></i>
+                            <span class="text-text-primary">Acesso imediato e privado</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-accent-green"></i>
+                            <span class="text-text-primary">Sem mensalidade</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-accent-green"></i>
+                            <span class="text-text-primary">Totalmente seguro e anônimo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <p class="text-accent-green font-bold text-xl mb-4">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>
+                        NÃO PERCA TEMPO! AS VAGAS SÃO LIMITADAS!
+                    </p>
+                    <p class="text-text-secondary">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        Clique no botão abaixo, garanta seu acesso agora e desbloqueie o conteúdo mais proibido da internet.
+                    </p>
+                </div>
+                
+                <button class="cta-gradient text-white font-bold py-6 px-12 rounded-xl text-xl w-full md:w-auto transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        data-event="click:handlePurchase"
+                        data-implementation="Should redirect to payment processing">
+                    <i class="fas fa-rocket mr-3"></i>
+                    Quero Meu Acesso AGORA!
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FinalCTASection -->
+
+    <!-- @COMPONENT: FAQSection -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                <i class="fas fa-question-circle text-accent-green mr-3"></i>
+                Perguntas Frequentes (FAQ)
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- @MAP: faqs.map(faq => ( -->
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleFAQ('access')"
+                            data-event="click:toggleFAQ"
+                            data-implementation="Toggle FAQ section visibility">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-xl">📦</span>
+                            <span class="text-lg font-semibold">O que vou ter acesso?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="access-faq-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="access-faq-content">
+                        <p class="text-text-secondary ml-8">
+                            Acesso imediato à nossa área de membros com todo o conteúdo +18 em desenho animado, além do grupo VIP no Telegram.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleFAQ('link')"
+                            data-event="click:toggleFAQ"
+                            data-implementation="Toggle FAQ section visibility">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-xl">🔗</span>
+                            <span class="text-lg font-semibold">Como recebo o link?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="link-faq-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="link-faq-content">
+                        <p class="text-text-secondary ml-8">
+                            Assim que seu pagamento for confirmado, você recebe o link direto no seu e-mail. É simples, rápido e sem complicações.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleFAQ('anonymous')"
+                            data-event="click:toggleFAQ"
+                            data-implementation="Toggle FAQ section visibility">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-xl">🔒</span>
+                            <span class="text-lg font-semibold">É anônimo?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="anonymous-faq-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="anonymous-faq-content">
+                        <p class="text-text-secondary ml-8">
+                            Totalmente. Nenhuma informação sensível aparece na sua fatura, e seus dados ficam 100% protegidos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-dark-secondary/80 backdrop-blur-sm rounded-2xl border border-dark-tertiary overflow-hidden">
+                    <button class="w-full p-6 text-left flex items-center justify-between hover:bg-dark-tertiary/50 transition-colors duration-300"
+                            onclick="toggleFAQ('refund')"
+                            data-event="click:toggleFAQ"
+                            data-implementation="Toggle FAQ section visibility">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-xl">💰</span>
+                            <span class="text-lg font-semibold">Tenho direito a reembolso?</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-text-secondary transform transition-transform duration-300" id="refund-faq-arrow"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" id="refund-faq-content">
+                        <p class="text-text-secondary ml-8">
+                            Sim. Se você não ficar satisfeito, é só pedir que devolvemos seu dinheiro.
+                        </p>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+
+            <div class="text-center mt-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-accent-green mb-8">
+                    <i class="fas fa-rocket mr-2"></i>
+                    AGORA É COM VOCÊ!
+                </h3>
+                
+                <button class="cta-gradient text-white font-bold py-6 px-12 rounded-xl text-xl w-full md:w-auto transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        data-event="click:handleFinalPurchase"
+                        data-implementation="Should redirect to payment processing with tracking">
+                    <i class="fas fa-unlock mr-3"></i>
+                    QUERO LIBERAR MEU ACESSO AGORA!
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQSection -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="py-12 px-4 bg-dark-primary border-t border-dark-tertiary">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-6">
+                <h4 class="text-lg font-semibold text-accent-green mb-2">Priv Desbloqueado</h4>
+                <p class="text-text-secondary text-sm">🔞 🔥</p>
+            </div>
+            
+            <div class="space-y-2 text-text-secondary text-sm mb-6">
+                <p data-mock="true">83.291.740/0023-61</p>
+                <p data-mock="true">Rua das Estrelas, 69 - Bairro Luxúria, São Paulo</p>
+                <p data-mock="true">Email: contato@privdesbloqueado.com</p>
+                <p data-mock="true">Todos os direitos reservados © 2025</p>
+            </div>
+            
+            <div class="text-xs text-text-secondary border-t border-dark-tertiary pt-6">
+                <p>Este site é apenas para maiores de 18 anos. Conteúdo adulto e exclusivo</p>
+                <p class="mt-2">
+                    <i class="fas fa-rocket text-accent-green mr-1"></i>
+                    <span class="text-accent-green">para quem curte exclusividade.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, and state management
+        
+        (function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Section toggle functionality
+            window.toggleSection = function(sectionId) {
+                const content = document.getElementById(sectionId + '-content');
+                const arrow = document.getElementById(sectionId + '-arrow');
+                
+                if (content && arrow) {
+                    const isHidden = content.classList.contains('hidden');
+                    
+                    // Close all other sections
+                    document.querySelectorAll('[id$="-content"]').forEach(el => {
+                        if (el !== content) {
+                            el.classList.add('hidden');
+                        }
+                    });
+                    document.querySelectorAll('[id$="-arrow"]').forEach(el => {
+                        if (el !== arrow) {
+                            el.classList.remove('rotate-180');
+                        }
+                    });
+                    
+                    // Toggle current section
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        arrow.classList.add('rotate-180');
+                    } else {
+                        content.classList.add('hidden');
+                        arrow.classList.remove('rotate-180');
+                    }
+                }
+            };
+
+            // FAQ toggle functionality
+            window.toggleFAQ = function(faqId) {
+                const content = document.getElementById(faqId + '-faq-content');
+                const arrow = document.getElementById(faqId + '-faq-arrow');
+                
+                if (content && arrow) {
+                    const isHidden = content.classList.contains('hidden');
+                    
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        arrow.classList.add('rotate-180');
+                    } else {
+                        content.classList.add('hidden');
+                        arrow.classList.remove('rotate-180');
+                    }
+                }
+            };
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-slide-up');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe sections for animations
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Purchase button click handlers
+            document.querySelectorAll('[data-event*="Purchase"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    // TODO: Implement payment processing
+                    console.log('Purchase button clicked');
+                    // In real implementation, this would redirect to payment processor
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -93,7 +93,7 @@ export function NewHomePage() {
 
   return (
     <div className="min-h-screen bg-background text-text-primary">
-      <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} />
+      {/* <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} /> */}
 
       <div className="lg:flex lg:space-x-8 lg:max-w-7xl lg:mx-auto lg:px-4 w-full overflow-hidden">
         <div className="lg:flex-1">
@@ -131,10 +131,7 @@ export function NewHomePage() {
                     </p>
                   </div>
 
-                  <CTAButton
-                    onClick={handleCTAClick}
-                    className="w-full text-lg py-4 mb-6"
-                  >
+                  <CTAButton className="w-full text-lg py-4 mb-6">
                     COMPRAR AGORA
                   </CTAButton>
 
@@ -325,7 +322,6 @@ export function NewHomePage() {
                 </span>
               </p>
               <CTAButton
-                onClick={() => {}}
                 disabled={purchaseMutation.isPending}
                 className="w-full"
               >
