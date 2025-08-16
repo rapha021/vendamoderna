@@ -99,7 +99,7 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
             onClick={onCTAClick}
             className="text-lg sm:text-xl py-4 sm:py-6 px-6 sm:px-8 w-full sm:w-auto mobile-button-full"
           >
-            🚀 GARANTIR ACESSO AGORA
+            GARANTIR ACESSO AGORA
           </CTAButton>
         </motion.div>
 

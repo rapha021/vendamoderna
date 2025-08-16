@@ -135,7 +135,7 @@ export function NewHomePage() {
                     onClick={handleCTAClick}
                     className="w-full text-lg py-4 mb-6"
                   >
-                    🚀 COMPRAR AGORA
+                    COMPRAR AGORA
                   </CTAButton>
 
                   <div className="text-center">
@@ -331,7 +331,7 @@ export function NewHomePage() {
               >
                 {purchaseMutation.isPending
                   ? "Processando..."
-                  : "Finalizar Compra"}
+                  : "FINALIZAR COMPRA"}
               </CTAButton>
               <p className="text-xs text-text-secondary mt-3">
                 Receba o acesso em até 5 minutos

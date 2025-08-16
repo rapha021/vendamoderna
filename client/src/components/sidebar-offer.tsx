@@ -72,7 +72,7 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
       </div>
 
       <CTAButton onClick={onCTAClick} className="w-full text-lg py-3">
-        🚀 QUERO COMPRAR
+        QUERO COMPRAR
       </CTAButton>
 
       <p className="text-xs text-text-secondary text-center mt-3">
