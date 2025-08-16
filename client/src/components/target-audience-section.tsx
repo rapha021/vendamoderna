@@ -30,7 +30,7 @@ export function TargetAudienceSection() {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-text-primary drop-shadow-lg">
             <Target className="text-accent-green mr-3 inline h-10 w-10" />
-            🎯 Indicado para Você Se:
+            Indicado para Você Se:
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
             Descubra se o nosso conteúdo premium é ideal para o seu perfil
@@ -47,7 +47,7 @@ export function TargetAudienceSection() {
           >
             <h3 className="text-2xl sm:text-3xl font-black mb-6 text-accent-green flex items-center drop-shadow-lg">
               <Check className="mr-3 h-8 w-8" />
-              ✅ INDICADO PARA VOCÊ SE:
+              INDICADO PARA VOCÊ SE:
             </h3>
             <div className="space-y-4">
               {idealCustomer.map((item, index) => (
@@ -75,7 +75,7 @@ export function TargetAudienceSection() {
           >
             <h3 className="text-2xl sm:text-3xl font-black mb-6 text-destructive flex items-center drop-shadow-lg">
               <X className="mr-3 h-8 w-8" />
-              ❌ TALVEZ NÃO SEJA PARA VOCÊ SE:
+              TALVEZ NÃO SEJA PARA VOCÊ SE:
             </h3>
             <div className="space-y-4">
               {notFor.map((item, index) => (

@@ -13,7 +13,7 @@ export function Footer() {
           className="mb-4 sm:mb-6"
         >
           <h4 className="text-base sm:text-lg font-semibold text-accent-green mb-2">{brandName}</h4>
-          <p className="text-text-secondary text-sm">✝️ 🙏</p>
+          <p className="text-text-secondary text-sm">✝️</p>
         </motion.div>
         
         <motion.div 

@@ -33,7 +33,7 @@ export function CTAButton({
         className={`${baseClasses} ${className} transition-all duration-300 w-full`}
       >
         <Rocket className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6 drop-shadow-lg" />
-        <span className="drop-shadow-lg">{children} 🎯</span>
+        <span className="drop-shadow-lg">{children}</span>
       </Button>
     </motion.div>
   );
