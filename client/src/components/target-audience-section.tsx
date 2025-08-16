@@ -28,9 +28,9 @@ export function TargetAudienceSection() {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
-            <Target className="text-accent-green mr-3 inline h-8 w-8" />
-            Indicado para Você Se:
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-text-primary drop-shadow-lg">
+            <Target className="text-accent-green mr-3 inline h-10 w-10" />
+            🎯 Indicado para Você Se:
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
             Descubra se o nosso conteúdo premium é ideal para o seu perfil
@@ -43,11 +43,11 @@ export function TargetAudienceSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-accent-green/10 border border-accent-green/30 rounded-2xl p-6 sm:p-8"
+            className="bg-gradient-to-br from-accent-green/20 to-accent-blue/10 border-3 border-accent-green/40 rounded-3xl p-6 sm:p-8 playful-shadow"
           >
-            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-accent-green flex items-center">
-              <Check className="mr-3 h-6 w-6" />
-              INDICADO PARA VOCÊ SE:
+            <h3 className="text-2xl sm:text-3xl font-black mb-6 text-accent-green flex items-center drop-shadow-lg">
+              <Check className="mr-3 h-8 w-8" />
+              ✅ INDICADO PARA VOCÊ SE:
             </h3>
             <div className="space-y-4">
               {idealCustomer.map((item, index) => (
@@ -71,11 +71,11 @@ export function TargetAudienceSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-destructive/10 border border-destructive/30 rounded-2xl p-6 sm:p-8"
+            className="bg-gradient-to-br from-destructive/20 to-accent-orange/10 border-3 border-destructive/40 rounded-3xl p-6 sm:p-8 playful-shadow"
           >
-            <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-destructive flex items-center">
-              <X className="mr-3 h-6 w-6" />
-              TALVEZ NÃO SEJA PARA VOCÊ SE:
+            <h3 className="text-2xl sm:text-3xl font-black mb-6 text-destructive flex items-center drop-shadow-lg">
+              <X className="mr-3 h-8 w-8" />
+              ❌ TALVEZ NÃO SEJA PARA VOCÊ SE:
             </h3>
             <div className="space-y-4">
               {notFor.map((item, index) => (
@@ -105,10 +105,10 @@ export function TargetAudienceSection() {
           <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-border inline-block">
             <Users className="text-accent-green h-8 w-8 mx-auto mb-4" />
             <p className="text-text-primary text-lg sm:text-xl font-semibold mb-2">
-              Já são mais de <span className="text-accent-green">2.500+ membros</span>
+              Já são mais de <span className="text-accent-green">2.500+ Igrejas</span>
             </p>
             <p className="text-text-secondary text-sm sm:text-base">
-              que confiam na nossa plataforma para conteúdo premium exclusivo
+              que confiam no nosso projeto de conteúdo para o ministério infantil / Escolas dominicais.
             </p>
           </div>
         </motion.div>

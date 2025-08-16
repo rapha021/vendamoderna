@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { CTAButton } from "./cta-button";
 import { Shield, Clock, RefreshCw, Lock } from "lucide-react";
+import price from "@/lib/utils";
 
 interface SidebarOfferProps {
   onCTAClick: () => void;
@@ -11,7 +12,7 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
     { icon: Shield, text: "Arquivos em PDF para imprimir" },
     { icon: Clock, text: "Mais de 450 atividades bíblicas" },
     { icon: RefreshCw, text: "5 bônus exclusivos" },
-    { icon: Lock, text: "Receba direto no zap" }
+    { icon: Lock, text: "Receba direto no zap" },
   ];
 
   return (
@@ -27,8 +28,10 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
           🔥 PROMOÇÃO ESPECIAL
         </h3>
         <div className="flex items-center justify-center space-x-2 mb-4">
-          <span className="text-lg text-text-secondary line-through">De R$ 47</span>
-          <span className="text-3xl font-bold text-accent-green">R$ 14,90</span>
+          <span className="text-lg text-text-secondary line-through">
+            De R$ 47
+          </span>
+          <span className="text-3xl font-bold text-accent-green">{price}</span>
         </div>
         <p className="text-sm text-destructive font-semibold mb-2">
           ⏰ Últimas unidades somente hoje!
@@ -45,7 +48,9 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
       </div>
 
       <div className="bg-background/50 rounded-xl p-4 mb-6">
-        <h4 className="font-bold text-text-primary mb-2">🛡️ Satisfação Garantida:</h4>
+        <h4 className="font-bold text-text-primary mb-2">
+          🛡️ Satisfação Garantida:
+        </h4>
         <p className="text-xs text-text-secondary mb-2">
           • 7 dias para solicitar reembolso
         </p>
@@ -66,10 +71,7 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
         </p>
       </div>
 
-      <CTAButton 
-        onClick={onCTAClick}
-        className="w-full text-lg py-3"
-      >
+      <CTAButton onClick={onCTAClick} className="w-full text-lg py-3">
         🚀 QUERO COMPRAR
       </CTAButton>
 

@@ -4,69 +4,77 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(240, 10%, 3.9%);
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(240, 10%, 3.9%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(240, 10%, 3.9%);
-  --primary: hsl(142, 76%, 36%);
+  --background: hsl(195, 100%, 95%); /* Light sky blue background */
+  --foreground: hsl(220, 30%, 25%); /* Deep blue text */
+  --card: hsl(45, 100%, 96%); /* Cream yellow cards */
+  --card-foreground: hsl(220, 30%, 25%);
+  --popover: hsl(45, 100%, 96%);
+  --popover-foreground: hsl(220, 30%, 25%);
+  --primary: hsl(280, 100%, 70%); /* Bright purple primary */
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(210, 40%, 98%);
-  --secondary-foreground: hsl(222.2, 84%, 4.9%);
-  --muted: hsl(210, 40%, 98%);
-  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
-  --accent: hsl(210, 40%, 98%);
-  --accent-foreground: hsl(222.2, 84%, 4.9%);
-  --destructive: hsl(0, 84.2%, 60.2%);
-  --destructive-foreground: hsl(210, 40%, 98%);
-  --border: hsl(214.3, 31.8%, 91.4%);
-  --input: hsl(214.3, 31.8%, 91.4%);
-  --ring: hsl(142, 76%, 36%);
-  --chart-1: hsl(220, 70%, 50%);
-  --chart-2: hsl(160, 60%, 45%);
-  --chart-3: hsl(30, 80%, 55%);
-  --chart-4: hsl(280, 65%, 60%);
-  --chart-5: hsl(340, 75%, 55%);
-  --radius: 0.75rem;
-  --light-primary: hsl(0, 0%, 100%);
-  --light-secondary: hsl(210, 40%, 98%);
-  --light-tertiary: hsl(214.3, 31.8%, 91.4%);
-  --accent-green: hsl(142, 76%, 36%);
-  --accent-red: hsl(0, 84%, 60%);
-  --text-primary: hsl(240, 10%, 3.9%);
-  --text-secondary: hsl(215.4, 16.3%, 46.9%);
+  --secondary: hsl(120, 60%, 85%); /* Light green secondary */
+  --secondary-foreground: hsl(220, 30%, 25%);
+  --muted: hsl(60, 100%, 90%); /* Light yellow muted */
+  --muted-foreground: hsl(220, 20%, 50%);
+  --accent: hsl(30, 100%, 85%); /* Light orange accent */
+  --accent-foreground: hsl(220, 30%, 25%);
+  --destructive: hsl(0, 80%, 65%); /* Soft red */
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(280, 50%, 80%); /* Purple borders */
+  --input: hsl(45, 100%, 92%); /* Light yellow inputs */
+  --ring: hsl(280, 100%, 70%);
+  --chart-1: hsl(280, 70%, 60%); /* Purple */
+  --chart-2: hsl(120, 60%, 50%); /* Green */
+  --chart-3: hsl(45, 90%, 60%); /* Yellow */
+  --chart-4: hsl(200, 80%, 60%); /* Blue */
+  --chart-5: hsl(340, 75%, 60%); /* Pink */
+  --radius: 1.5rem; /* More rounded for childlike feel */
+  
+  /* Custom childlike theme colors */
+  --light-primary: hsl(195, 100%, 95%);
+  --light-secondary: hsl(45, 100%, 96%);
+  --light-tertiary: hsl(120, 60%, 85%);
+  --accent-green: hsl(120, 60%, 45%); /* Playful green */
+  --accent-red: hsl(0, 80%, 65%); /* Soft red */
+  --accent-purple: hsl(280, 100%, 70%); /* Bright purple */
+  --accent-orange: hsl(30, 100%, 65%); /* Bright orange */
+  --accent-blue: hsl(200, 100%, 60%); /* Bright blue */
+  --text-primary: hsl(220, 30%, 25%); /* Deep blue text */
+  --text-secondary: hsl(220, 20%, 50%); /* Medium blue text */
 }
 
 .dark {
-  --background: hsl(240, 10%, 3.9%);
-  --foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
-  --card-foreground: hsl(0, 0%, 98%);
-  --popover: hsl(240, 10%, 3.9%);
-  --popover-foreground: hsl(0, 0%, 98%);
-  --primary: hsl(142, 76%, 36%);
-  --primary-foreground: hsl(355, 7%, 97%);
-  --secondary: hsl(240, 3.7%, 15.9%);
-  --secondary-foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --accent: hsl(240, 3.7%, 15.9%);
-  --accent-foreground: hsl(0, 0%, 98%);
-  --destructive: hsl(0, 62.8%, 30.6%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --ring: hsl(142, 76%, 36%);
+  --background: hsl(250, 40%, 15%); /* Dark purple background */
+  --foreground: hsl(45, 100%, 90%); /* Light cream text */
+  --card: hsl(260, 30%, 20%); /* Dark purple cards */
+  --card-foreground: hsl(45, 100%, 90%);
+  --popover: hsl(260, 30%, 20%);
+  --popover-foreground: hsl(45, 100%, 90%);
+  --primary: hsl(280, 80%, 60%); /* Bright purple */
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(250, 20%, 25%); /* Dark secondary */
+  --secondary-foreground: hsl(45, 100%, 90%);
+  --muted: hsl(250, 20%, 25%);
+  --muted-foreground: hsl(45, 50%, 70%);
+  --accent: hsl(30, 80%, 50%); /* Orange accent for dark */
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 70%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(280, 30%, 35%); /* Purple borders */
+  --input: hsl(260, 20%, 25%);
+  --ring: hsl(280, 80%, 60%);
   
-  /* Custom dark theme colors */
-  --light-primary: hsl(240, 10%, 3.9%);
-  --light-secondary: hsl(240, 3.7%, 15.9%);
-  --light-tertiary: hsl(240, 3.7%, 25%);
-  --accent-green: hsl(142, 76%, 36%);
-  --accent-red: hsl(0, 84%, 60%);
-  --text-primary: hsl(0, 0%, 98%);
-  --text-secondary: hsl(240, 5%, 64.9%);
+  /* Custom dark childlike theme colors */
+  --light-primary: hsl(250, 40%, 15%);
+  --light-secondary: hsl(260, 30%, 20%);
+  --light-tertiary: hsl(250, 20%, 25%);
+  --accent-green: hsl(120, 50%, 50%);
+  --accent-red: hsl(0, 70%, 60%);
+  --accent-purple: hsl(280, 80%, 60%);
+  --accent-orange: hsl(30, 80%, 50%);
+  --accent-blue: hsl(200, 80%, 60%);
+  --text-primary: hsl(45, 100%, 90%);
+  --text-secondary: hsl(45, 50%, 70%);
 }
 
 @layer base {
@@ -76,9 +84,13 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Comic Sans MS', 'Nunito', 'Fredoka One', cursive, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsla(280, 100%, 90%, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsla(120, 100%, 90%, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsla(45, 100%, 90%, 0.2) 0%, transparent 50%);
   }
   
   html {
@@ -89,6 +101,45 @@
 @layer components {
   .mobile-padding {
     @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Childlike decorative elements */
+  .playful-shadow {
+    box-shadow: 
+      0 8px 25px -8px hsla(280, 100%, 70%, 0.3),
+      0 4px 12px -4px hsla(120, 60%, 45%, 0.2),
+      0 2px 6px -2px hsla(45, 100%, 60%, 0.2);
+  }
+  
+  .rainbow-border {
+    border: 3px solid;
+    border-image: linear-gradient(45deg, 
+      hsl(280, 100%, 70%), 
+      hsl(200, 100%, 60%), 
+      hsl(120, 60%, 45%), 
+      hsl(45, 100%, 60%), 
+      hsl(0, 80%, 65%)
+    ) 1;
+    border-radius: 1.5rem;
+  }
+  
+  .wiggle-animation {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+  }
+  
+  .bounce-animation {
+    animation: bounce-gentle 3s ease-in-out infinite;
+  }
+  
+  @keyframes bounce-gentle {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
   }
   
   .container-safe {

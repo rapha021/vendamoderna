@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CTAButton } from "./cta-button";
 import { ShoppingCart, HelpCircle } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
+import { brandName } from "@/lib/utils";
 
 interface HeaderProps {
   onBuyClick: () => void;
@@ -39,7 +40,7 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
             <span className="text-white font-bold text-sm">S</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-text-primary">Inserir nome da marca aqui</h1>
+            <h1 className="text-xl font-bold text-text-primary">{brandName}</h1>
             <p className="text-xs text-text-secondary">Atividades Bíblicas Infantis</p>
           </div>
         </div>

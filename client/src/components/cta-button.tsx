@@ -18,13 +18,13 @@ export function CTAButton({
   variant = "primary" 
 }: CTAButtonProps) {
   const baseClasses = variant === "primary" 
-    ? "cta-gradient text-white font-bold py-4 sm:py-6 px-6 sm:px-12 rounded-xl text-base sm:text-lg md:text-xl shadow-lg hover:shadow-xl"
-    : "bg-accent-green text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg shadow-md hover:shadow-lg";
+    ? "bg-gradient-to-r from-accent-green to-accent-blue text-white font-black py-4 sm:py-6 px-8 sm:px-12 rounded-full text-lg sm:text-xl md:text-2xl shadow-2xl hover:shadow-accent-green/50 border-4 border-white/30 playful-shadow"
+    : "bg-gradient-to-r from-accent-purple to-accent-orange text-white font-black py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg shadow-xl hover:shadow-lg border-3 border-white/20";
 
   return (
     <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.08, rotate: 1 }}
+      whileTap={{ scale: 0.92 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
       <Button
@@ -32,8 +32,8 @@ export function CTAButton({
         disabled={disabled}
         className={`${baseClasses} ${className} transition-all duration-300 w-full`}
       >
-        <Rocket className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5" />
-        {children}
+        <Rocket className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6 drop-shadow-lg" />
+        <span className="drop-shadow-lg">{children} 🎯</span>
       </Button>
     </motion.div>
   );

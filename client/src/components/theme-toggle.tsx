@@ -40,10 +40,10 @@ export function ThemeToggle() {
       <motion.div
         initial={false}
         animate={{ 
-          rotate: theme === "dark" ? 180 : theme === "system" ? 90 : 0,
-          scale: 1 
+          rotate: theme === "dark" ? 360 : theme === "system" ? 720 : 1080,
+          scale: 1
         }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
         className="text-text-primary"
       >
         {getIcon()}

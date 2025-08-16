@@ -111,26 +111,26 @@ export function ContentExamplesSection() {
             <h3 className="text-2xl sm:text-3xl font-bold text-text-primary mb-4">
               ✨ Isso é apenas uma pequena amostra!
             </h3>
-            <p className="text-text-secondary text-lg sm:text-xl mb-6">
+            {/* <p className="text-text-secondary text-lg sm:text-xl mb-6">
               Nossa área de membros possui muito mais conteúdo exclusivo, 
               atualizado semanalmente com material inédito de alta qualidade.
-            </p>
+            </p> */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">500+</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Fotos HD</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">450++</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Atividades</div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">100+</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Vídeos</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">50+</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Caça-Palavras</div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">24/7</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Acesso</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">20+</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Estrategias essenciais </div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">7x</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Por Semana</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">5</div>
+                <div className="text-xs sm:text-sm text-text-secondary">Bonus grátis </div>
               </div>
             </div>
           </div>
