@@ -70,7 +70,7 @@ export function HowItWorksSection() {
               </h3>
               
               <p className={`text-sm sm:text-base leading-relaxed text-center ${
-                step.isHighlighted ? 'text-white/90' : 'text-text-secondary'
+                step.isHighlighted ? 'text-white' : 'text-text-primary'
               }`}>
                 {step.description}
               </p>
