@@ -26,7 +26,7 @@ export function CTAButton({
       whileTap={{ scale: 0.92 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
     >
-      <a href="https://pay.kiwify.com.br/g4Ve5DX">
+      <a href="#planos">
         <Button
           disabled={disabled}
           className={`${baseClasses} ${className} transition-all duration-300 w-full`}

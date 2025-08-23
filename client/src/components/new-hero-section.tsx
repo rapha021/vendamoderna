@@ -101,7 +101,7 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
         >
           <div className="bg-accent-green/10 border-2 border-accent-green rounded-3xl p-6 sm:p-8 inline-block">
             <p className="text-2xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 text-text-primary">
-              Apenas <span className="text-accent-green">{price}</span>
+              A partir de <span className="text-accent-green">{price}</span>
             </p>
             <p className="text-text-secondary text-sm sm:text-base">
               Promoção válida por tempo limitado • Pagamento único

@@ -19,8 +19,17 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { CreditCard, Smartphone, Check } from "lucide-react";
-import price from "@/lib/utils";
+import {
+  CreditCard,
+  Smartphone,
+  Shield,
+  X,
+  Clock,
+  Lock,
+  BookOpen,
+  FileStack,
+} from "lucide-react";
+import price, { upSellPrice } from "@/lib/utils";
 
 interface PurchaseData {
   name: string;
@@ -91,6 +100,64 @@ export function NewHomePage() {
     purchaseMutation.mutate(purchaseData);
   };
 
+  const benefitsFullPrice = [
+    {
+      icon: Shield,
+      text: "Arquivos em PDF para imprimir",
+      color: "text-accent-green",
+    },
+    {
+      icon: Clock,
+      text: "Mais de 500 atividades bíblicas",
+      color: "text-accent-green",
+    },
+    {
+      icon: BookOpen,
+      text: "Bônus - 50 Caça palavras Bíblico",
+      color: "text-accent-green",
+    },
+    {
+      icon: BookOpen,
+      text: "Bônus - Orações para Crianças",
+      color: "text-accent-green",
+    },
+    {
+      icon: BookOpen,
+      text: "Bônus - Dicas para começar no Ministério Infantil",
+      color: "text-accent-green",
+    },
+    {
+      icon: BookOpen,
+      text: "Bônus - Meu Caderninho de Orações",
+      color: "text-accent-green",
+    },
+    {
+      icon: BookOpen,
+      text: "Bônus - Quiz Bíblico",
+      color: "text-accent-green",
+    },
+    { icon: Lock, text: "Receba direto no zap", color: "text-accent-green" },
+  ];
+
+  const benefitsLowestPrice = [
+    {
+      icon: Shield,
+      text: "Arquivos em PDF para imprimir",
+      color: "text-accent-green",
+    },
+    {
+      icon: FileStack,
+      text: "Mais de 500 atividades bíblicas",
+      color: "text-accent-green",
+    },
+    { icon: Lock, text: "Receba direto no zap", color: "text-accent-green" },
+    {
+      icon: X,
+      text: "Você não receberá nenhum bônus",
+      color: "text-accent-red",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background text-text-primary">
       {/* <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} /> */}
@@ -124,7 +191,9 @@ export function NewHomePage() {
                 <div className="bg-background/80 rounded-2xl p-6 sm:p-8 border border-border">
                   <div className="text-center mb-6">
                     <div className="text-4xl sm:text-5xl font-bold text-text-primary mb-2">
-                      <span className="text-accent-green">{price}</span>
+                      <span className="text-accent-green">
+                        A partir de {price}
+                      </span>
                     </div>
                     <p className="text-text-secondary">
                       Promoção por tempo limitado - Pagamento único
@@ -132,7 +201,7 @@ export function NewHomePage() {
                   </div>
 
                   <CTAButton className="w-full text-lg py-4 mb-6">
-                    COMPRAR AGORA
+                    ESCOLHER MEU PLANO
                   </CTAButton>
 
                   <div className="text-center">
@@ -176,35 +245,30 @@ export function NewHomePage() {
                       "🧩 BÔNUS 1 - Desafios Bíblicos – 50 Caça-Palavras para Crianças",
                     description:
                       "Atividades divertidas e educativas para ajudar as crianças a fixarem passagens e personagens bíblicos. São 50 modelos exclusivos que estimulam o raciocínio e fortalecem o conhecimento bíblico de forma lúdica.",
-                    value: "GRÁTIS",
                   },
                   {
                     title:
                       "🙏 BÔNUS 2 - Guia Infantil de Oração – Palavras que Aproximam de Deus",
                     description:
                       "Um guia simples e ilustrado com orações curtas e significativas, perfeito para ensinar os pequenos a conversar com Deus. Um recurso essencial para cultivar a fé desde cedo.",
-                    value: "GRÁTIS",
                   },
                   {
                     title:
                       "🌱 BÔNUS 3 - Passo a Passo do Ministério Infantil – 20 Estratégias Essenciais",
                     description:
                       "Um manual prático com 20 estratégias testadas e aprovadas para iniciar ou fortalecer o seu Ministério Infantil. Descubra como engajar crianças, criar rotinas e transformar vidas através da Palavra.",
-                    value: "GRÁTIS",
                   },
                   {
                     title:
                       "📖 BÔNUS 4 - Diário de Fé – Anotações e Orações para Crianças",
                     description:
                       "Um caderno ilustrado para que as crianças registrem aprendizados, versículos e orações após as aulas. Um jeito especial de incentivar a reflexão e manter viva a conexão com Deus.",
-                    value: "GRÁTIS",
                   },
                   {
                     title:
                       "🎯 BÔNUS 5 - Super Quiz da Bíblia – Diversão e Aprendizado Cristão",
                     description:
                       "Um kit repleto de perguntas e respostas sobre histórias, personagens e curiosidades bíblicas. Aprender nunca foi tão divertido para as crianças e para toda a família.",
-                    value: "GRÁTIS",
                   },
                 ].map((bonus, index) => (
                   <motion.div
@@ -221,9 +285,6 @@ export function NewHomePage() {
                     <p className="text-text-secondary mb-4 font-semibold leading-relaxed">
                       {bonus.description}
                     </p>
-                    <div className="bg-accent-green text-white px-4 py-2 rounded-xl text-center font-bold drop-shadow-lg">
-                      {bonus.value}
-                    </div>
                   </motion.div>
                 ))}
               </div>
@@ -232,8 +293,21 @@ export function NewHomePage() {
         </div>
 
         <div className="lg:w-80 lg:pt-24 px-4 lg:px-0">
-          <div className="lg:sticky lg:top-24">
-            <SidebarOffer onCTAClick={handleCTAClick} />
+          <div className="lg:sticky lg:top-24 gap-5 flex flex-col">
+            <SidebarOffer
+              onCTAClick={handleCTAClick}
+              price={upSellPrice}
+              benefits={benefitsFullPrice}
+              title="👑 MAIS COMPLETO e CUSTO BENEFICIO"
+              checkoutLink="https://checkout.rydigital.com.br/VCCL1O8SC6VH"
+            />
+            <SidebarOffer
+              onCTAClick={handleCTAClick}
+              price={price}
+              benefits={benefitsLowestPrice}
+              title="MAIS SIMPLES"
+              checkoutLink="https://checkout.rydigital.com.br/VCCL1O8SC6VR"
+            />
           </div>
         </div>
       </div>

@@ -1,15 +1,18 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs))
+  return twMerge(clsx(inputs));
 }
-const price = 9.90;
+const price = 14.9;
+export const upSellPrice = (27.9).toLocaleString("pt-BR", {
+  style: "currency",
+  currency: "BRL",
+});
 
-export default price.toLocaleString('pt-BR', {
-  style: 'currency',
-  currency: 'BRL',
+export default price.toLocaleString("pt-BR", {
+  style: "currency",
+  currency: "BRL",
 });
 
 export const brandName = "Crianças de Deus";
-

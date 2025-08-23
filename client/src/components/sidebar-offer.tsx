@@ -1,31 +1,48 @@
 import { motion } from "framer-motion";
 import { CTAButton } from "./cta-button";
-import { Shield, Clock, RefreshCw, Lock } from "lucide-react";
-import price from "@/lib/utils";
+import {
+  Shield,
+  Clock,
+  RefreshCw,
+  Lock,
+  BookOpen,
+  LucideProps,
+} from "lucide-react";
+import price, { upSellPrice } from "@/lib/utils";
 
 interface SidebarOfferProps {
   onCTAClick: () => void;
+  price: string;
+  benefits: Array<{
+    icon: React.ForwardRefExoticComponent<
+      Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>
+    >;
+    text: string;
+    color: string;
+  }>;
+  title: string
+  checkoutLink: string
 }
 
-export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
-  const benefits = [
-    { icon: Shield, text: "Arquivos em PDF para imprimir" },
-    { icon: Clock, text: "Mais de 450 atividades bíblicas" },
-    { icon: RefreshCw, text: "5 bônus exclusivos" },
-    { icon: Lock, text: "Receba direto no zap" },
-  ];
-
+export function SidebarOffer({
+  onCTAClick,
+  price,
+  benefits,
+  title,
+  checkoutLink
+}: SidebarOfferProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 20 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="bg-accent-green/10 border-2 border-accent-green rounded-2xl p-6 sticky top-24"
+      className="bg-accent-green/10 border-2 border-accent-green rounded-2xl p-6 sticky top-24 flex flex-col"
+      id="planos"
     >
       <div className="text-center mb-6">
         <h3 className="text-2xl font-bold text-text-primary mb-2">
-          🔥 PROMOÇÃO ESPECIAL
+          {title}
         </h3>
         <div className="flex items-center justify-center space-x-2 mb-4">
           <span className="text-lg text-text-secondary line-through">
@@ -41,7 +58,9 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
       <div className="space-y-3 mb-6">
         {benefits.map((benefit, index) => (
           <div key={index} className="flex items-center space-x-3">
-            <benefit.icon className="h-5 w-5 text-accent-green flex-shrink-0" />
+            <benefit.icon
+              className={`h-5 w-5 flex-shrink-0 ${benefit.color}`}
+            />
             <span className="text-sm text-text-primary">{benefit.text}</span>
           </div>
         ))}
@@ -71,9 +90,7 @@ export function SidebarOffer({ onCTAClick }: SidebarOfferProps) {
         </p>
       </div>
 
-      <CTAButton className="w-full text-lg py-3">
-        QUERO COMPRAR
-      </CTAButton>
+      <a href={checkoutLink} className="bg-accent-green text-white font-bold py-4 sm:py-6 px-8 sm:px-12 rounded-2xl text-lg sm:text-xl md:text-2xl shadow-xl hover:shadow-2xl border-3 border-accent-green/30 playful-shadow w-full text-center">QUERO COMPRAR</a>
 
       <p className="text-xs text-text-secondary text-center mt-3">
         Acesso liberado em até 5 minutos após o pagamento
