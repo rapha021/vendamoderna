@@ -5,6 +5,7 @@ import { Header } from "../components/header";
 import { NewHeroSection } from "../components/new-hero-section";
 import { TargetAudienceSection } from "../components/target-audience-section";
 import { DesignedForSection } from "../components/designed-for-section";
+import { HowItWorksSection } from "../components/how-it-works-section";
 import { ContentExamplesSection } from "../components/content-examples-section";
 import { TestimonialsSection } from "../components/testimonials-section";
 import { SidebarOffer } from "../components/sidebar-offer";
@@ -168,6 +169,7 @@ export function NewHomePage() {
           <NewHeroSection onCTAClick={handleCTAClick} />
           <TargetAudienceSection />
           <DesignedForSection />
+          <HowItWorksSection />
           <ContentExamplesSection />
           <TestimonialsSection />
 
