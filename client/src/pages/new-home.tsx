@@ -4,6 +4,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Header } from "../components/header";
 import { NewHeroSection } from "../components/new-hero-section";
 import { TargetAudienceSection } from "../components/target-audience-section";
+import { DesignedForSection } from "../components/designed-for-section";
 import { ContentExamplesSection } from "../components/content-examples-section";
 import { TestimonialsSection } from "../components/testimonials-section";
 import { SidebarOffer } from "../components/sidebar-offer";
@@ -166,6 +167,7 @@ export function NewHomePage() {
         <div className="lg:flex-1">
           <NewHeroSection onCTAClick={handleCTAClick} />
           <TargetAudienceSection />
+          <DesignedForSection />
           <ContentExamplesSection />
           <TestimonialsSection />
 

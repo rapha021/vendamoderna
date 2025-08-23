@@ -105,7 +105,7 @@ export function TargetAudienceSection() {
           <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-border inline-block">
             <Users className="text-accent-green h-8 w-8 mx-auto mb-4" />
             <p className="text-text-primary text-lg sm:text-xl font-semibold mb-2">
-              Já são mais de <span className="text-accent-green">2.500+ Igrejas</span>
+              <span className="text-accent-green">Testado em igrejas locais</span>
             </p>
             <p className="text-text-secondary text-sm sm:text-base">
               que confiam no nosso projeto de conteúdo para o ministério infantil / Escolas dominicais.
