@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Heart, GraduationCap } from "lucide-react";
-import familyImage from "@assets/image_1755991389145.png";
+import { Heart, GraduationCap, Users } from "lucide-react";
 
 export function DesignedForSection() {
   return (
@@ -28,11 +27,9 @@ export function DesignedForSection() {
             className="bg-gradient-to-br from-accent-blue/20 to-accent-green/10 border-3 border-accent-blue/40 rounded-3xl p-6 sm:p-8 playful-shadow"
           >
             <div className="text-center mb-6">
-              <img 
-                src={familyImage} 
-                alt="Família feliz no sofá" 
-                className="w-full max-w-sm mx-auto rounded-2xl shadow-lg"
-              />
+              <div className="w-24 h-24 mx-auto bg-gradient-to-br from-accent-blue to-accent-purple rounded-full flex items-center justify-center mb-4">
+                <Users className="h-12 w-12 text-white" />
+              </div>
             </div>
             
             <h3 className="text-2xl sm:text-3xl font-black mb-6 text-accent-blue flex items-center justify-center drop-shadow-lg">
