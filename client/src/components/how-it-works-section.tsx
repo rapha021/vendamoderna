@@ -9,7 +9,7 @@ export function HowItWorksSection() {
       description: "O conteúdo é totalmente digital e, após a compra, serão enviadas as informações de acesso para seu e-mail.",
       bgColor: "from-accent-orange/20 to-accent-yellow/10",
       borderColor: "border-accent-orange/40",
-      iconColor: "text-accent-orange"
+      iconColor: "text-text-primary"
     },
     {
       icon: Printer,
@@ -26,7 +26,7 @@ export function HowItWorksSection() {
       description: "Com o material impresso, é hora de aproveitar os desenhos bíblicos para colorir, criando momentos especiais e cheios de aprendizado com seus filhos, do jeito que sua família precisar.",
       bgColor: "from-accent-green/20 to-accent-blue/10",
       borderColor: "border-accent-green/40",
-      iconColor: "text-accent-green"
+      iconColor: "text-text-primary"
     }
   ];
 
