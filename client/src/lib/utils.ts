@@ -15,4 +15,4 @@ export default price.toLocaleString("pt-BR", {
   currency: "BRL",
 });
 
-export const brandName = "Crianças de Deus";
+export const brandName = "Pequenos Discípulos";

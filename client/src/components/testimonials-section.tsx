@@ -8,29 +8,29 @@ export function TestimonialsSection() {
       location: "São Paulo, SP",
       rating: 5,
       text: "Finalmente encontrei atividades de qualidade para usar no ministério infantil. As crianças adoram e os pais elogiam muito!",
-      verified: true
+      verified: true,
     },
     {
       name: "Pastor Rafael M.",
-      location: "Rio de Janeiro, RJ", 
+      location: "Rio de Janeiro, RJ",
       rating: 5,
       text: "Melhor investimento que fiz para a igreja! Material rico em conteúdo bíblico e muito bem organizado. Recomendo!",
-      verified: true
+      verified: true,
     },
     {
       name: "Ana Paula L.",
       location: "Belo Horizonte, MG",
       rating: 5,
       text: "As atividades são perfeitas para ensinar a palavra de Deus de forma lúdica. Minhas filhas amam fazer as atividades!",
-      verified: true
+      verified: true,
     },
     {
       name: "Professor Carlos P.",
       location: "Porto Alegre, RS",
       rating: 5,
       text: "Material muito bem elaborado e fácil de imprimir. Uso nas aulas da escolinha dominical há 6 meses e é um sucesso!",
-      verified: true
-    }
+      verified: true,
+    },
   ];
 
   return (
@@ -44,14 +44,13 @@ export function TestimonialsSection() {
           className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
-            <Quote className="text-accent-green mr-3 inline h-8 w-8" />
-            O que dizem mães e professoras que já usaram o kit
+            <Quote className="text-accent-green mr-3 inline h-8 w-8" />O que
+            dizem mães e professoras que já usaram o kit
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
-            Depoimentos reais de pessoas que já usaram nossas atividades bíblicas no ministério infantil
+            Depoimentos reais de pessoas que já usaram nossas atividades
+            bíblicas no ministério infantil
           </p>
-          
-
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -72,12 +71,15 @@ export function TestimonialsSection() {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="flex-1">
                   <div className="flex items-center space-x-2 mb-2">
                     <div className="flex">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                        <Star
+                          key={i}
+                          className="h-4 w-4 text-yellow-400 fill-current"
+                        />
                       ))}
                     </div>
                     {testimonial.verified && (
@@ -86,21 +88,11 @@ export function TestimonialsSection() {
                       </span>
                     )}
                   </div>
-                  
+
                   <p className="text-text-primary text-sm sm:text-base mb-3 leading-relaxed">
                     "{testimonial.text}"
                   </p>
-                  
-                  {/* Screenshot placeholder for each testimonial */}
-                  <div className="mb-4">
-                    <div className="w-32 h-20 bg-gray-200 rounded border border-gray-300 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-4 h-4 bg-gray-400 rounded mx-auto mb-1"></div>
-                        <p className="text-gray-600 text-xs">Print {index + 1}</p>
-                      </div>
-                    </div>
-                  </div>
-                  
+
                   <div className="text-text-secondary text-sm">
                     <span className="font-semibold">{testimonial.name}</span>
                     <span className="mx-2">•</span>
@@ -128,7 +120,10 @@ export function TestimonialsSection() {
             </p>
             <div className="flex justify-center space-x-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 text-yellow-400 fill-current" />
+                <Star
+                  key={i}
+                  className="h-6 w-6 text-yellow-400 fill-current"
+                />
               ))}
             </div>
           </div>

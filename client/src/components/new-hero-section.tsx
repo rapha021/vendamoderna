@@ -27,7 +27,7 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
           <img
             src={bannerImage}
             alt="Atividades Bíblicas - Material Educativo para Crianças"
-            className="w-full h-auto rounded-3xl playful-shadow border-4 border-accent-purple/30"
+            className="w-full h-auto rounded-3xl playful-shadow border-4 border-accent-green/30"
           />
         </div>
       </div>
@@ -41,13 +41,13 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
         >
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black mb-6 sm:mb-8 leading-tight text-text-primary drop-shadow-lg">
             Cansado(a) de{" "}
-            <span className="text-accent-green bg-accent-green/10 px-3 py-1 rounded-2xl">
+            <span className="text-accent-black bg-accent-green/10 px-3 py-1 bg-accent-green">
               Improvisar
             </span>{" "}
             nas Aulas do Ministério Infantil? 🤔
             <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl text-accent-purple font-extrabold">
-              📚 Coleção Premium – 450+ Atividades Cristãs para Crianças ✨
+            <span className="text-2xl sm:text-3xl md:text-4xl text-emerald-500 font-extrabold">
+              📚 Coleção Premium – 500+ Atividades Cristãs para Crianças ✨
             </span>
           </h1>
 

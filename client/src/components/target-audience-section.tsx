@@ -7,7 +7,7 @@ export function TargetAudienceSection() {
     "Busca economizar tempo, sem precisar criar atividades do zero.",
     "Deseja aproximar as crianças da Palavra de Deus de forma divertida e envolvente.",
     "Quer oferecer alternativas criativas para que elas passem menos tempo em telas e mais tempo aprendendo.",
-    "Gosta de atividades bíblicas práticas, prontas para imprimir e aplicar imediatamente."
+    "Gosta de atividades bíblicas práticas, prontas para imprimir e aplicar imediatamente.",
   ];
 
   const notFor = [
@@ -15,7 +15,7 @@ export function TargetAudienceSection() {
     "Não tem nem 10 minutos por dia para dedicar às crianças.",
     "Não se preocupa com o tipo de conteúdo que as crianças consomem.",
     "Não valoriza materiais de ensino estruturados e com base bíblica.",
-    "Prefere improvisar as aulas sem planejamento ou sequência de ensino."
+    "Prefere improvisar as aulas sem planejamento ou sequência de ensino.",
   ];
 
   return (
@@ -45,7 +45,7 @@ export function TargetAudienceSection() {
             viewport={{ once: true }}
             className="bg-gradient-to-br from-accent-green/20 to-accent-blue/10 border-3 border-accent-green/40 rounded-3xl p-6 sm:p-8 playful-shadow"
           >
-            <h3 className="text-2xl sm:text-3xl font-black mb-6 text-accent-green flex items-center drop-shadow-lg">
+            <h3 className="text-2xl sm:text-3xl font-black mb-6 text-emerald-500 flex items-center drop-shadow-lg">
               <Check className="mr-3 h-8 w-8" />
               INDICADO PARA VOCÊ SE:
             </h3>
@@ -59,8 +59,10 @@ export function TargetAudienceSection() {
                   viewport={{ once: true }}
                   className="flex items-start space-x-3"
                 >
-                  <Check className="text-accent-green h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span className="text-text-primary text-sm sm:text-base">{item}</span>
+                  <Check className="text-emerald-500 h-5 w-5 mt-0.5 flex-shrink-0" />
+                  <span className="text-text-primary text-sm sm:text-base">
+                    {item}
+                  </span>
                 </motion.div>
               ))}
             </div>
@@ -88,7 +90,9 @@ export function TargetAudienceSection() {
                   className="flex items-start space-x-3"
                 >
                   <X className="text-destructive h-5 w-5 mt-0.5 flex-shrink-0" />
-                  <span className="text-text-primary text-sm sm:text-base">{item}</span>
+                  <span className="text-text-primary text-sm sm:text-base">
+                    {item}
+                  </span>
                 </motion.div>
               ))}
             </div>
@@ -105,10 +109,13 @@ export function TargetAudienceSection() {
           <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-border inline-block">
             <Users className="text-accent-green h-8 w-8 mx-auto mb-4" />
             <p className="text-text-primary text-lg sm:text-xl font-semibold mb-2">
-              <span className="text-accent-green">Testado em igrejas locais</span>
+              <span className="text-accent-green">
+                Testado em igrejas locais
+              </span>
             </p>
             <p className="text-text-secondary text-sm sm:text-base">
-              que confiam no nosso projeto de conteúdo para o ministério infantil / Escolas dominicais.
+              que confiam no nosso projeto de conteúdo para o ministério
+              infantil / Escolas dominicais.
             </p>
           </div>
         </motion.div>

@@ -12,7 +12,7 @@ export function DesignedForSection() {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-accent-blue drop-shadow-lg">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4 text-accent-black drop-shadow-lg">
             PENSADO PARA:
           </h2>
         </motion.div>
