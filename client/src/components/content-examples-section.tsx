@@ -6,7 +6,7 @@ export function ContentExamplesSection() {
     {
       type: "activities",
       title: "Atividades Bíblicas",
-      description: "Mais de 450 atividades prontas para imprimir",
+      description: "Mais de 500 atividades prontas para imprimir",
       preview: "✝️ Caderninho de Orações",
       icon: Image
     },
@@ -48,7 +48,7 @@ export function ContentExamplesSection() {
             Exemplos de Atividades
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-6">
-            O material completo contém historinhas e mais de 450 atividades para crianças de 2 até 12 anos de idade
+            O material completo contém historinhas e mais de 500 atividades para crianças de 2 até 12 anos de idade
           </p>
           <div className="bg-accent-green/10 border border-accent-green/30 rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto">
             <p className="text-accent-green font-semibold text-sm sm:text-base">
@@ -117,7 +117,7 @@ export function ContentExamplesSection() {
             </p> */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">450++</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">500+</div>
                 <div className="text-xs sm:text-sm text-text-secondary">Atividades</div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">

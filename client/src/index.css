@@ -34,7 +34,7 @@
   --light-primary: hsl(195, 100%, 95%);
   --light-secondary: hsl(45, 100%, 96%);
   --light-tertiary: hsl(120, 60%, 85%);
-  --accent-green: hsl(120, 60%, 45%); /* Playful green */
+  --accent-green: hsl(45, 97%, 58%); /* Golden yellow #fec629 - primary highlight color */
   --accent-red: hsl(0, 80%, 65%); /* Soft red */
   --accent-purple: hsl(280, 100%, 70%); /* Bright purple */
   --accent-orange: hsl(30, 100%, 65%); /* Bright orange */

@@ -17,8 +17,8 @@ export function HowItWorksSection() {
       description: "Você escolhe quando quiser, pois o acesso é VITALÍCIO e quantas vezes desejar.",
       bgColor: "from-accent-purple/30 to-accent-blue/15",
       borderColor: "border-accent-purple/50",
-      iconColor: "text-white",
-      isHighlighted: true
+      iconColor: "text-text-primary",
+      isHighlighted: false
     },
     {
       icon: PenTool,

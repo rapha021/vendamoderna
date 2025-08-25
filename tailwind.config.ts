@@ -56,6 +56,10 @@ export default {
         "dark-tertiary": "var(--dark-tertiary)",
         "accent-green": "var(--accent-green)",
         "accent-red": "var(--accent-red)",
+        "accent-purple": "var(--accent-purple)",
+        "accent-orange": "var(--accent-orange)",
+        "accent-blue": "var(--accent-blue)",
+        "accent-yellow": "var(--accent-green)", /* Alias for new golden color */
         "text-primary": "var(--text-primary)",
         "text-secondary": "var(--text-secondary)",
       },
