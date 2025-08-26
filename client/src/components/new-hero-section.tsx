@@ -3,6 +3,7 @@ import { CTAButton } from "./cta-button";
 import { Shield, Lock, Clock, CheckCircle } from "lucide-react";
 import bannerImage from "@assets/banner_header_1754956073282.png";
 import price from "@/lib/utils";
+import { IdentificationSection } from "./identification-section";
 
 interface NewHeroSectionProps {
   onCTAClick: () => void;
@@ -63,6 +64,8 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
           </p>
         </motion.div>
 
+        <IdentificationSection />
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,9 +89,9 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-card to-accent/20 rounded-3xl p-4 sm:p-6 border-3 border-accent-purple/40 playful-shadow transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-br from-emerald-100 to-accent/20 rounded-3xl p-4 sm:p-6 border-3 border-accent-purple/40 playful-shadow transform hover:scale-105 transition-all duration-300"
               >
-                <item.icon className="h-8 w-8 text-accent-green mb-3 mx-auto drop-shadow-md" />
+                <item.icon className="h-8 w-8 text-emerald-500 mb-3 mx-auto drop-shadow-md" />
                 <p className="text-sm sm:text-base text-text-primary font-bold">
                   {item.text}
                 </p>

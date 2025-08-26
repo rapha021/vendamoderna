@@ -51,7 +51,7 @@ export function ContentExamplesSection() {
             O material completo contém historinhas e mais de 500 atividades para crianças de 2 até 12 anos de idade
           </p>
           <div className="bg-accent-green/10 border border-accent-green/30 rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto">
-            <p className="text-accent-green font-semibold text-sm sm:text-base">
+            <p className="text-accent-purple font-semibold text-sm sm:text-base">
               ✝️ Atividades bíblicas para aproximar as crianças da palavra de Deus
             </p>
           </div>
@@ -82,16 +82,18 @@ export function ContentExamplesSection() {
                   </p>
                   
                   <div className="bg-accent-green/10 border border-accent-green/30 rounded-xl p-4">
-                    <div className="aspect-video bg-gradient-to-br from-accent-green/20 to-accent-green/5 rounded-lg flex items-center justify-center mb-3">
+                    <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-50 rounded-lg flex items-center justify-center mb-3 border-2 border-dashed border-gray-300">
                       <div className="text-center">
-                        <div className="text-4xl mb-2">🔒</div>
+                        <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mb-2 mx-auto">
+                          <Image className="h-8 w-8 text-gray-400" />
+                        </div>
                         <p className="text-xs text-text-secondary font-medium">
                           {example.preview}
                         </p>
                       </div>
                     </div>
                     <p className="text-xs text-accent-green font-semibold">
-                      Desbloqueado após a compra
+                      Prévia do conteúdo
                     </p>
                   </div>
                 </div>

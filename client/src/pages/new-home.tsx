@@ -1,9 +1,7 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Header } from "../components/header";
 import { NewHeroSection } from "../components/new-hero-section";
-import { IdentificationSection } from "../components/identification-section";
 import { TargetAudienceSection } from "../components/target-audience-section";
 import { DesignedForSection } from "../components/designed-for-section";
 import { HowItWorksSection } from "../components/how-it-works-section";
@@ -168,7 +166,7 @@ export function NewHomePage() {
       <div className="lg:flex lg:space-x-8 lg:max-w-7xl lg:mx-auto lg:px-4 w-full overflow-hidden">
         <div className="lg:flex-1">
           <NewHeroSection onCTAClick={handleCTAClick} />
-          <IdentificationSection />
+
           <TargetAudienceSection />
           <DesignedForSection />
           <HowItWorksSection />
