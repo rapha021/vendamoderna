@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Play, Image, Star, Eye } from "lucide-react";
+import contentPreviewImage from "@assets/image_1756209940557.png";
 
 export function ContentExamplesSection() {
   const contentExamples = [
@@ -82,15 +83,13 @@ export function ContentExamplesSection() {
                   </p>
                   
                   <div className="bg-accent-green/10 border border-accent-green/30 rounded-xl p-4">
-                    <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-50 rounded-lg flex items-center justify-center mb-3 border-2 border-dashed border-gray-300">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mb-2 mx-auto">
-                          <Image className="h-8 w-8 text-gray-400" />
-                        </div>
-                        <p className="text-xs text-text-secondary font-medium">
-                          {example.preview}
-                        </p>
-                      </div>
+                    <div className="aspect-video rounded-lg overflow-hidden mb-3 border border-border/20">
+                      <img 
+                        src={contentPreviewImage} 
+                        alt={`Prévia de ${example.title}`}
+                        className="w-full h-full object-cover"
+                        data-testid={`content-preview-${example.type}`}
+                      />
                     </div>
                     <p className="text-xs text-accent-green font-semibold">
                       Prévia do conteúdo
