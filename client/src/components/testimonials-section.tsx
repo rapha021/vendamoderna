@@ -45,7 +45,7 @@ export function TestimonialsSection() {
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
             <Quote className="text-accent-green mr-3 inline h-8 w-8" />O que
-            dizem mães e professoras que já usaram o kit
+            as pessoas que fazem parte da nossa comunidade dizem
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
             Depoimentos reais de pessoas que já usaram nossas atividades

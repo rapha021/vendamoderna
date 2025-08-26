@@ -33,6 +33,7 @@ import {
   FileStack,
 } from "lucide-react";
 import price, { upSellPrice } from "@/lib/utils";
+import { Header } from "@/components/header";
 
 interface PurchaseData {
   name: string;
@@ -163,12 +164,11 @@ export function NewHomePage() {
 
   return (
     <div className="min-h-screen bg-background text-text-primary">
-      {/* <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} /> */}
+      <Header onBuyClick={handleCTAClick} onFAQClick={handleFAQClick} />
 
       <div className="lg:flex lg:space-x-8 lg:max-w-7xl lg:mx-auto lg:px-4 w-full overflow-hidden">
         <div className="lg:flex-1">
           <NewHeroSection onCTAClick={handleCTAClick} />
-          <IdentificationSection />
           <TargetAudienceSection />
           <DesignedForSection />
           <HowItWorksSection />

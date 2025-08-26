@@ -16,59 +16,33 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const shouldShow = scrollPosition > 100; // Show header after scrolling 100px
+      const shouldShow = scrollPosition > 100 && scrollPosition < 13000; // Show header after scrolling 100px
+
       setIsVisible(shouldShow);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.header 
-          initial={{ opacity: 0, y: -100 }}
+        <motion.header
+          initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -100 }}
+          exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-lg"
+          className="fixed bottom-4 left-0 right-0 z-50 flex items-center justify-center"
         >
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 rounded-full bg-accent-green flex items-center justify-center">
-            <span className="text-white font-bold text-sm">S</span>
+          <div className="bg-yellow-500/50 backdrop-blur-sm rounded-full border-b border-border shadow-lg h-16 flex items-center justify-center px-4">
+            <div className="md:hidden flex items-center space-x-3">
+              <CTAButton className="py-2 px-4 text-sm">
+                FAZER PARTE DA COMUNIDADE
+              </CTAButton>
+            </div>
           </div>
-          <div>
-            <h1 className="text-xl font-bold text-text-primary">{brandName}</h1>
-            <p className="text-xs text-text-secondary">Atividades Bíblicas Infantis</p>
-          </div>
-        </div>
-        
-        <nav className="hidden md:flex items-center space-x-6">
-          <button 
-            onClick={onBuyClick}
-            className="flex items-center space-x-2 text-text-primary hover:text-accent-green transition-colors"
-          >
-            <ShoppingCart className="h-4 w-4" />
-            <span>Comprar</span>
-          </button>
-          <button 
-            onClick={onFAQClick}
-            className="flex items-center space-x-2 text-text-primary hover:text-accent-green transition-colors"
-          >
-            <HelpCircle className="h-4 w-4" />
-            <span>Dúvidas</span>
-          </button>
-        </nav>
-        
-        <div className="md:hidden flex items-center space-x-3">
-          <CTAButton onClick={onBuyClick} className="py-2 px-4 text-sm">
-            Comprar
-          </CTAButton>
-        </div>
-      </div>
-    </motion.header>
+        </motion.header>
       )}
     </AnimatePresence>
   );

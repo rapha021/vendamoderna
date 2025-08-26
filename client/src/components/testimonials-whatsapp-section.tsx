@@ -8,17 +8,17 @@ export function TestimonialsWhatsAppSection() {
     {
       id: 1,
       image: testimonial1,
-      alt: "Depoimento de mãe sobre o material bíblico"
+      alt: "Depoimento de mãe sobre o material bíblico",
     },
     {
       id: 2,
       image: testimonial2,
-      alt: "Depoimento de professora sobre as atividades"
-    }
+      alt: "Depoimento de professora sobre as atividades",
+    },
   ];
 
   return (
-    <section className="py-16 sm:py-20 px-4 bg-gradient-to-br from-secondary/40 to-background w-full overflow-hidden">
+    <section className="py-2 sm:py-4 px-4 bg-gradient-to-br from-secondary/40 to-background w-full overflow-hidden">
       <div className="max-w-6xl mx-auto mobile-padding">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -36,11 +36,8 @@ export function TestimonialsWhatsAppSection() {
             </div>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-text-primary">
-            💬 O que dizem mães e professoras que já usaram o kit
+            💬 O que dizem pais e professores que confiam na gente
           </h2>
-          <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto">
-            Depoimentos reais de quem já transformou suas aulas e momentos em família com nosso material
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -61,9 +58,9 @@ export function TestimonialsWhatsAppSection() {
                     alt={testimonial.alt}
                     className="w-full h-auto rounded-xl"
                   />
-                  <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center">
+                  <div className="absolute top-3 right-3 bg-purple-500 text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center">
                     <MessageCircle className="h-3 w-3 mr-1" />
-                    WhatsApp
+                    Instagram
                   </div>
                 </div>
               </div>
@@ -91,7 +88,8 @@ export function TestimonialsWhatsAppSection() {
               "Material de excelente qualidade que realmente funciona!"
             </p>
             <p className="text-text-secondary text-sm mt-2">
-              Baseado em centenas de depoimentos de mães e professoras satisfeitas
+              Baseado em centenas de depoimentos de mães e professoras
+              satisfeitas
             </p>
           </div>
         </motion.div>
