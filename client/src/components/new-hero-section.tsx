@@ -46,16 +46,20 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
             </span>{" "}
             nas Aulas do Ministério Infantil? 🤔
             <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl text-emerald-500 font-extrabold">
-              📚 Coleção Premium – 500+ Atividades Cristãs para Crianças ✨
+            <span className="text-2xl sm:text-3xl md:text-4xl text-text-primary text-left font-extrabold">
+              📚 Chega de Aulas Monótonas!{" "}
+              <span className="text-2xl sm:text-3xl md:text-4xl text-text-primary font-extrabold bg-accent-green p-1">
+                O Guia Completo
+              </span>{" "}
+              Para Despertar o Coração das Crianças Para a Palavra de Deus.✨
             </span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
-            Uma seleção incrível de mais de 450 páginas de atividades bíblicas
-            para colorir, recortar, montar e brincar — tudo pronto para
-            imprimir. Ideal para escolas dominicais, ministérios infantis e pais
-            que querem ensinar a Palavra de Deus de forma criativa e envolvente.
+            Uma seleção incrível de mais de 500 atividades bíblicas para
+            colorir, recortar, montar e brincar — tudo pronto para imprimir.
+            Ideal para escolas dominicais, ministérios infantis e pais que
+            querem ensinar a Palavra de Deus de forma criativa e envolvente.
           </p>
         </motion.div>
 
