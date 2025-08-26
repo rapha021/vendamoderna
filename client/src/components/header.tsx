@@ -35,8 +35,8 @@ export function Header({ onBuyClick, onFAQClick }: HeaderProps) {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="fixed bottom-4 left-0 right-0 z-50 flex items-center justify-center"
         >
-          <div className="bg-yellow-500/50 backdrop-blur-sm rounded-full border-b border-border shadow-lg h-16 flex items-center justify-center px-4">
-            <div className="md:hidden flex items-center space-x-3">
+          <div className="bg-yellow-500/50 backdrop-blur-sm rounded-full border-b border-border shadow-lg h-16 flex items-center justify-center px-4 md:hidden">
+            <div className="flex items-center space-x-3">
               <CTAButton className="py-2 px-4 text-sm">
                 FAZER PARTE DA COMUNIDADE
               </CTAButton>
