@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Play, Image, Star, Eye } from "lucide-react";
-import contentPreviewImage from "@assets/image_1756209940557.png";
+import firstActivity from "@assets/atividade_1.jpeg";
+import secondActivity from "@assets/atividade_2.png";
+import thirdActivity from "@assets/atividade_3.jpeg";
 
 export function ContentExamplesSection() {
   const contentExamples = [
@@ -9,28 +11,32 @@ export function ContentExamplesSection() {
       title: "Atividades Bíblicas",
       description: "Mais de 500 atividades prontas para imprimir",
       preview: "✝️ Caderninho de Orações",
-      icon: Image
+      icon: Image,
+      img: firstActivity
     },
     {
       type: "stories",
       title: "Historinhas Bíblicas",
       description: "Histórias ilustradas para crianças",
       preview: "📖 A Criação da Humanidade",
-      icon: Play
+      icon: Play,
+      img: secondActivity
     },
     {
       type: "games",
       title: "Caça Palavras Bíblico",
       description: "50 diferentes tipos de caça palavras",
       preview: "🎯 Velho Testamento - Parte I",
-      icon: Star
+      icon: Star,
+      img: thirdActivity
     },
     {
       type: "planning",
       title: "Planejamento Bíblico",
       description: "Guias organizados para suas aulas",
       preview: "📅 Planejamento Bíblico 2024",
-      icon: Eye
+      icon: Eye,
+      img: firstActivity
     }
   ];
 
@@ -85,7 +91,7 @@ export function ContentExamplesSection() {
                   <div className="bg-accent-green/10 border border-accent-green/30 rounded-xl p-4">
                     <div className="aspect-video rounded-lg overflow-hidden mb-3 border border-border/20">
                       <img 
-                        src={contentPreviewImage} 
+                        src={example.img} 
                         alt={`Prévia de ${example.title}`}
                         className="w-full h-full object-cover"
                         data-testid={`content-preview-${example.type}`}
