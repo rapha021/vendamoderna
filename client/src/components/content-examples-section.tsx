@@ -9,10 +9,10 @@ export function ContentExamplesSection() {
     {
       type: "activities",
       title: "Atividades Bíblicas",
-      description: "Mais de 500 atividades prontas para imprimir",
+      description: "Mais de 450 atividades prontas para imprimir",
       preview: "✝️ Caderninho de Orações",
       icon: Image,
-      img: firstActivity
+      img: firstActivity,
     },
     {
       type: "stories",
@@ -20,7 +20,7 @@ export function ContentExamplesSection() {
       description: "Histórias ilustradas para crianças",
       preview: "📖 A Criação da Humanidade",
       icon: Play,
-      img: secondActivity
+      img: secondActivity,
     },
     {
       type: "games",
@@ -28,7 +28,7 @@ export function ContentExamplesSection() {
       description: "50 diferentes tipos de caça palavras",
       preview: "🎯 Velho Testamento - Parte I",
       icon: Star,
-      img: thirdActivity
+      img: thirdActivity,
     },
     {
       type: "planning",
@@ -36,8 +36,8 @@ export function ContentExamplesSection() {
       description: "Guias organizados para suas aulas",
       preview: "📅 Planejamento Bíblico 2024",
       icon: Eye,
-      img: firstActivity
-    }
+      img: firstActivity,
+    },
   ];
 
   return (
@@ -55,11 +55,13 @@ export function ContentExamplesSection() {
             Exemplos de Atividades
           </h2>
           <p className="text-lg sm:text-xl text-text-secondary max-w-3xl mx-auto mb-6">
-            O material completo contém historinhas e mais de 500 atividades para crianças de 2 até 12 anos de idade
+            O material completo contém historinhas e mais de 450 atividades para
+            crianças de 2 até 12 anos de idade
           </p>
           <div className="bg-accent-green/10 border border-accent-green/30 rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto">
             <p className="text-accent-purple font-semibold text-sm sm:text-base">
-              ✝️ Atividades bíblicas para aproximar as crianças da palavra de Deus
+              ✝️ Atividades bíblicas para aproximar as crianças da palavra de
+              Deus
             </p>
           </div>
         </motion.div>
@@ -79,19 +81,19 @@ export function ContentExamplesSection() {
                   <div className="bg-accent-green/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                     <example.icon className="h-8 w-8 text-accent-green" />
                   </div>
-                  
+
                   <h3 className="text-lg sm:text-xl font-bold text-text-primary mb-2">
                     {example.title}
                   </h3>
-                  
+
                   <p className="text-text-secondary text-sm mb-4">
                     {example.description}
                   </p>
-                  
+
                   <div className="bg-accent-green/10 border border-accent-green/30 rounded-xl p-4">
                     <div className="aspect-video rounded-lg overflow-hidden mb-3 border border-border/20">
-                      <img 
-                        src={example.img} 
+                      <img
+                        src={example.img}
                         alt={`Prévia de ${example.title}`}
                         className="w-full h-full object-cover"
                         data-testid={`content-preview-${example.type}`}
@@ -124,20 +126,36 @@ export function ContentExamplesSection() {
             </p> */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">500+</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Atividades</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">
+                  450+
+                </div>
+                <div className="text-xs sm:text-sm text-text-secondary">
+                  Atividades
+                </div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">50+</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Caça-Palavras</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">
+                  50+
+                </div>
+                <div className="text-xs sm:text-sm text-text-secondary">
+                  Caça-Palavras
+                </div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">20+</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Estrategias essenciais </div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">
+                  20+
+                </div>
+                <div className="text-xs sm:text-sm text-text-secondary">
+                  Estrategias essenciais{" "}
+                </div>
               </div>
               <div className="bg-background/50 rounded-xl p-3">
-                <div className="text-2xl sm:text-3xl font-bold text-accent-green">5</div>
-                <div className="text-xs sm:text-sm text-text-secondary">Bonus grátis </div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent-green">
+                  5
+                </div>
+                <div className="text-xs sm:text-sm text-text-secondary">
+                  Bonus grátis{" "}
+                </div>
               </div>
             </div>
           </div>

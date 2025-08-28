@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { CTAButton } from "./cta-button";
 import { Shield, Lock, Clock, CheckCircle } from "lucide-react";
-import bannerImage from "@assets/banner_header_1754956073282.png";
+import bannerImage from "@assets/bg_header.png";
 import price from "@/lib/utils";
 import { IdentificationSection } from "./identification-section";
 
@@ -13,14 +13,16 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
   return (
     <section className="pt-4 pb-16 sm:pt-8 sm:pb-20 px-4 bg-gradient-to-br from-background via-secondary/30 to-background w-full overflow-hidden relative">
       {/* Playful background decorations */}
+
       {/* <div className="absolute inset-0 overflow-hidden pointer-events-none"> */}
       {/* Floating emojis */}
+
       {/* <div className="absolute top-16 right-16 text-4xl wiggle-animation">🌈</div>
         <div className="absolute top-32 left-8 text-3xl bounce-animation" style={{animationDelay: '1s'}}>📚</div>
         <div className="absolute bottom-40 right-12 text-3xl wiggle-animation" style={{animationDelay: '2s'}}>✨</div>
         <div className="absolute top-60 left-1/4 text-2xl bounce-animation" style={{animationDelay: '0.5s'}}>🎨</div>
-        <div className="absolute bottom-32 right-1/4 text-2xl wiggle-animation" style={{animationDelay: '1.5s'}}>🙏</div>
-      </div> */}
+        <div className="absolute bottom-32 right-1/4 text-2xl wiggle-animation" style={{animationDelay: '1.5s'}}>🙏</div> */}
+      {/* </div> */}
 
       {/* Product Banner */}
       <div className="w-full mb-8 sm:mb-12 relative z-10">
@@ -57,7 +59,7 @@ export function NewHeroSection({ onCTAClick }: NewHeroSectionProps) {
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
-            Uma seleção incrível de mais de 500 atividades bíblicas para
+            Uma seleção incrível de mais de 450 atividades bíblicas para
             colorir, recortar, montar e brincar — tudo pronto para imprimir.
             Ideal para escolas dominicais, ministérios infantis e pais que
             querem ensinar a Palavra de Deus de forma criativa e envolvente.

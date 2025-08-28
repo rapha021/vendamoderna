@@ -112,7 +112,7 @@ export function NewHomePage() {
     },
     {
       icon: Clock,
-      text: "Mais de 500 atividades bíblicas",
+      text: "Mais de 450 atividades bíblicas",
       color: "text-accent-green",
     },
     {
@@ -140,7 +140,7 @@ export function NewHomePage() {
       text: "Bônus - Quiz Bíblico",
       color: "text-accent-green",
     },
-    { icon: Lock, text: "Receba direto no zap", color: "text-accent-green" },
+    { icon: Lock, text: "Acesso imediato", color: "text-accent-green" },
   ];
 
   const benefitsLowestPrice = [
@@ -151,10 +151,10 @@ export function NewHomePage() {
     },
     {
       icon: FileStack,
-      text: "Mais de 500 atividades bíblicas",
+      text: "Mais de 450 atividades bíblicas",
       color: "text-accent-green",
     },
-    { icon: Lock, text: "Receba direto no zap", color: "text-accent-green" },
+    { icon: Lock, text: "Acesso imediato", color: "text-accent-green" },
     {
       icon: X,
       text: "Você não receberá nenhum bônus",

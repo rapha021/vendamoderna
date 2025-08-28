@@ -1,3 +1,4 @@
+import { brandName } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Heart, GraduationCap, Users } from "lucide-react";
 
@@ -75,7 +76,7 @@ export function DesignedForSection() {
 
             <div className="space-y-4">
               <p className="text-text-primary text-sm sm:text-base leading-relaxed">
-                O kit pequenos discípulos será um{" "}
+                O kit {brandName} será um{" "}
                 <span className="font-bold text-accent-green">
                   grande aliado na rotina do ministério infantil
                 </span>
