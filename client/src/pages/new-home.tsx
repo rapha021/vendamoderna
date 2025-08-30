@@ -306,14 +306,14 @@ export function NewHomePage() {
               price={upSellPrice}
               benefits={benefitsFullPrice}
               title="👑 MAIS COMPLETO e CUSTO BENEFICIO"
-              checkoutLink="https://checkout.rydigital.com.br/VCCL1O8SC6VH"
+              checkoutLink="https://checkout.criancasdejesus.com/VCCL1O8SC6VH"
             />
             <SidebarOffer
               onCTAClick={handleCTAClick}
               price={price}
               benefits={benefitsLowestPrice}
               title="MAIS SIMPLES"
-              checkoutLink="https://checkout.rydigital.com.br/VCCL1O8SC6VR"
+              checkoutLink="https://checkout.criancasdejesus.com/VCCL1O8SC6VR"
             />
           </div>
         </div>
